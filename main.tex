@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{article}
+
+% Encoding and language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+
+% Layout and style
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{parskip}
+
+% Math and figures
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+
+% Bibliography
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{references.bib}
+
+% Metadata
+\title{Titel des kurzen Papers}
+\author{Vorname Nachname}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\input{chapters/einleitung}
+\input{chapters/stand_der_technik}
+\input{chapters/methodik}
+\input{chapters/darstellung_der_ergebnisse}
+\input{chapters/diskussion_der_ergebnisse}
+\input{chapters/fazit_und_ausblick}
+
+\printbibliography
+
+\end{document}
