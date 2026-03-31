@@ -1,0 +1,43 @@
+\section{Systemkonzept und Hardware-/Softwarearchitektur}
+
+\subsection{Gesamtarchitektur}
+
+Übersicht des Systems als Blockdiagramm
+typischer Ablauf:
+Wakeword-Erkennung
+Sprachaufnahme
+Speech-to-Text
+LLM-Verarbeitung
+Entscheidung zwischen normaler Antwort und Modulausführung
+Text-to-Speech
+visuelle Ausgabe auf dem Display
+
+
+\subsection{Hardwareaufbau}
+
+Hier muss die Hardware explizit rein.
+Mögliche Unterpunkte
+Recheneinheit: Raspberry Pi
+Mikrofoneinheit: ReSpeaker 2-Mics Pi HAT
+Display: Waveshare 4" IPS LCD
+Audioausgabe: Lautsprecher
+Gehäuse / physische Integration
+visuelle Identität: Pixel-Art-Faultier „Pablo“
+Sinnvolle Begründungen
+Raspberry Pi wegen kompakter Bauform, breiter Community, guter Kompatibilität
+ReSpeaker wegen einfacher Integration von Sprachaufnahme in ein Embedded-System
+kompaktes Display zur lokalen visuellen Rückmeldung
+physischer Aufbau, damit Pablo als Companion wahrgenommen wird und nicht nur als Softwareprozess
+
+
+\subsection{Softwarearchitektur}
+
+modulare Python-basierte Struktur
+Trennung zwischen:
+Eingabe
+Sprachverarbeitung
+LLM-Logik
+Modulschnittstellen
+Ausgabe
+Benutzeroberfläche
+API-basierte Module als Erweiterungskonzept
