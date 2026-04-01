@@ -1,22 +1,20 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
-\contentsline {section}{\numberline {2}Produktbeschreibung und Anforderungen}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Zielsetzung des Produkts}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Kernfunktionen}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Anforderungen}{2}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Entwicklungsprozess}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Konzeption}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Iterative Entwicklung}{2}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Praktische Herausforderungen}{3}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Systemkonzept und Hardware-/Softwarearchitektur}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Gesamtarchitektur}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Hardwareaufbau}{3}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Softwarearchitektur}{3}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Begründung zentraler Entwicklungsentscheidungen}{3}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Entscheidung für einen physischen Companion statt reinem Softwareassistenten}{3}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Entscheidung für modular erweiterbare API-Struktur}{3}{subsection.5.2}%
+\contentsline {section}{\numberline {2}Entwicklungsprozess}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Konzeption}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Iterative Entwicklung}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Praktische Herausforderungen}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Produktbeschreibung}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Kernfunktionen}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Systemkonzept und Hardware-/Softwarearchitektur}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Gesamtarchitektur}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Hardwareaufbau}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Softwarearchitektur}{4}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Begründung zentraler Entwicklungsentscheidungen}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Entscheidung für einen physischen Companion statt reinem Softwareassistenten}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Entscheidung für modular erweiterbare API-Struktur}{4}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Entscheidung für Raspberry-Pi-basierte Hardware}{4}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Entscheidung für Wakeword- und Sprachsteuerung}{4}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Entscheidung für eine visuelle Persona}{4}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Entscheidung für ein kompaktes Display}{4}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Ergebnis und kritische Einordnung}{4}{section.6}%
+\contentsline {subsection}{\numberline {5.4}Entscheidung für Wakeword- und Sprachsteuerung}{5}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Entscheidung für eine visuelle Persona}{5}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Entscheidung für ein kompaktes Display}{5}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Ergebnis und kritische Einordnung}{5}{section.6}%

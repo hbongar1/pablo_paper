@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1774959511.44391 "main.bcf" "main.bbl" "main" 1774959607.0643 0
-  "main.bcf" 1774959606.88773 107802 540d4f0b7dea00dd82dd206d5876ea8a "pdflatex"
+["biber main"] 1774959511.44391 "main.bcf" "main.bbl" "main" 1775052633.12892 0
+  "main.bcf" 1775052632.94181 107802 540d4f0b7dea00dd82dd206d5876ea8a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774959605.45789 "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex" "main.pdf" "main" 1774959607.06474 0
-  "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex" 1774959605.11194 1057 0623018d1a2c7ff11d5008dfcf351b51 ""
+["pdflatex"] 1775052631.4363 "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex" "main.pdf" "main" 1775052633.12932 0
+  "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex" 1775051245.66601 1058 b0763424a32ba36fe40ac2d88f8ef8a6 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -125,18 +125,18 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774955869 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774955747 3636767 1c078392701ce9aa0a4b9e494fdc5804 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "chapters/01_einleitung.tex" 1774958858.51664 271 9b0977031617079d8cd55e38eeb6e8dc ""
-  "chapters/02_produktbeschreibung_anforderungen.tex" 1774958971.66875 838 21c5cc13710d07217280c8417b86b038 ""
+  "chapters/01_einleitung.tex" 1775051195.67958 252 7d81b6c21c8c6aa8f003ce376801bdaf ""
+  "chapters/02_produktbeschreibung_anforderungen.tex" 1775052629.35706 0 d41d8cd98f00b204e9800998ecf8427e ""
   "chapters/03_entwicklungsprozess.tex" 1774959071.39147 1347 04dccf235431393b3b8baf70c49c7deb ""
-  "chapters/04_systemkonzept.tex" 1774959177.09116 1182 33640060feac81875bca5524aa2aaad3 ""
+  "chapters/04_systemkonzept.tex" 1775052629.23519 5723 80c5c4e2f56c5cdab121e2539d733115 ""
   "chapters/05_entwicklungsentscheidungen.tex" 1774959307.23247 1222 31c5bf53ce5955d637e75a7ffa125945 ""
   "chapters/06_ergebnis_kritischeEinordnung.tex" 1774959303.5084 641 f73ff1bce3fc27a1319ce72b5811b409 ""
-  "main.aux" 1774959606.883 3259 89f51169d6923191bc61f3311c4e2cf4 "pdflatex"
-  "main.bbl" 1774959528.13438 466 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1774959606.88589 4503 0fb9fc75cfde33c2183c324a8e3fc8ec "pdflatex"
-  "main.run.xml" 1774959606.88876 2432 49ce9cc1c2e214794d05d7a5a4d87ddd "pdflatex"
-  "main.tex" 1774959605.11194 1057 0623018d1a2c7ff11d5008dfcf351b51 ""
-  "main.toc" 1774959606.88889 2011 07d9c6f1d8d264af7accee7b04e2c296 "pdflatex"
+  "main.aux" 1775052632.93719 2990 f70d42ac27113c0aeedb34c73e66eb0b "pdflatex"
+  "main.bbl" 1775051112.48849 466 76d65a242ec496c9b4361af646ff12cb "biber main"
+  "main.out" 1775052632.94007 4100 459ebbd08f2dccbacbd3c95f13b75bac "pdflatex"
+  "main.run.xml" 1775052632.94287 2432 49ce9cc1c2e214794d05d7a5a4d87ddd "pdflatex"
+  "main.tex" 1775051245.66601 1058 b0763424a32ba36fe40ac2d88f8ef8a6 ""
+  "main.toc" 1775052632.94303 1824 65ebf16f425ed6498ff6b02413159e3c "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
