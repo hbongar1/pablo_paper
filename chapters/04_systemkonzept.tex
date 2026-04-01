@@ -20,41 +20,57 @@ Diese Offenheit und Erweiterbarkeit stellt ein zentrales Unterscheidungsmerkmal 
 
 \subsection{Kernfunktionen}
 
-Die Kernfunktionen von Pablo orientieren sich an typischen Anforderungen des Alltags und bilden die Grundlage für einen funktionalen Prototyp. 
-Eine zentrale Funktion ist die Beantwortung allgemeiner Fragen mithilfe eines Large Language Models. 
-Dadurch ist Pablo in der Lage, auf sprachlich formulierte Anfragen flexibel zu reagieren und kontextbezogene Antworten zu generieren. 
-Diese Fähigkeit erweitert das System über fest programmierte Befehle hinaus und ermöglicht eine natürlichere Interaktion zwischen Nutzenden und Produkt.
-
-Darüber hinaus verfügt Pablo über konkrete Funktionsaufrufe für alltagsnahe Anwendungen. 
-Dazu zählen unter anderem das Erstellen und Verwalten von Notizen, die Unterstützung bei Kalender- und Terminaufgaben, das Setzen von Timern und aktuelleWetterabfragen. 
-Diese Funktionen sind so gewählt, dass sie einen unmittelbaren praktischen Nutzen im täglichen Gebrauch bieten und gleichzeitig die modulare Erweiterbarkeit des Systems demonstrieren. 
-Die Auswahl dieser Module folgt dem Ziel, mit einem überschaubaren, aber sinnvollen Funktionsumfang einen realistischen und alltagsrelevanten Minimalfunktionsumfang umzusetzen. 
-
 Die Aktivierung des Systems erfolgt wakeword-basiert. 
 Dadurch verbleibt Pablo im Bereitschaftszustand, bis eine definierte sprachliche Aktivierung erkannt wird. 
 Dieses Interaktionsprinzip wurde gewählt, um die Bedienung möglichst natürlich zu gestalten und gleichzeitig eine gezielte Nutzung des Systems zu ermöglichen. 
-Nach der Aktivierung kann die weitere Kommunikation sprachlich erfolgen, sodass Nutzende Anfragen und Befehle direkt formulieren können.
+Nach Erkennung des Wakewords richtet Pablo seinen Bildschirm automatisiert in die Richtung aus, aus der die Stimme detektiert wurde. 
+Nach der Aktivierung erfolgt die weitere Interaktion sprachlich, sodass Nutzende Anfragen und Befehle direkt formulieren können.
 
-Die Ausgabe der Informationen und Rückmeldungen erfolgt multimodal über Sprache und Display. 
-Sprachliche Antworten ermöglichen eine direkte und komfortable Interaktion, während das Display ergänzende visuelle Informationen, Statusanzeigen oder grafische Elemente darstellen kann. 
-Die Kombination beider Ausgabekanäle verbessert die Verständlichkeit der Interaktion und unterstützt zugleich den Charakter von Pablo als physisch präsentes, interaktives Assistenzsystem. 
-Insgesamt bilden diese Kernfunktionen die technische und konzeptionelle Basis des Produkts und definieren den Funktionsrahmen für die weitere Entwicklung.
+Die Kernfunktionen von Pablo orientieren sich an typischen Anforderungen des Alltags und bilden die Grundlage für einen funktionalen Prototyp. 
+Eine zentrale Funktion ist die Beantwortung allgemeiner Fragen mithilfe eines Large Language Models. 
+Dadurch ist Pablo in der Lage, auf sprachlich formulierte Anfragen flexibel und kontextbezogen zu reagieren. 
+
+Darüber hinaus verfügt Pablo über konkrete Funktionsaufrufe für Anwendungen. 
+Dazu zählen das Erstellen und Verwalten von Notizen, Erstellen von Kalendereinträgen, das Setzen von Timern und aktuelle Wetterabfragen. 
+Diese Funktionen sind so gewählt, dass sie einen unmittelbaren praktischen Nutzen im täglichen Gebrauch bieten und gleichzeitig die modulare Erweiterbarkeit des Systems demonstrieren. 
+
+Insgesamt bilden diese Kernfunktionen die technische und konzeptionelle Basis des Produkts und schaffen eine Grundlage für weitere Entwicklung.
 
 
+\subsection{Softwarearchitektur}
 
-\section{Systemkonzept und Hardware-/Softwarearchitektur}
+Die Softwarearchitektur von Pablo basiert auf einer modularen, ereignisgesteuerten Python-Struktur mit Trennung zwischen Ein- und Ausgabe, Dialogverarbeitung sowie Hardwaresteuerung. 
+Beim Start werden zunächst die Systemkonfiguration, die verfügbaren Plugin-Module und die visuelle Prozessdarstellung initialisiert. 
+Anschließend wird der Wakeword- und Richtungsdetektor konfiguriert, der als Trigger-Komponente für die Interaktionsschleife fungiert.
+Die aus der Wakeword-Analyse abgeleitete Schallrichtung wird unmittelbar auf die Servosteuerung übertragen, sodass sich die Anzeigeeinheit in Richtung der sprechenden Person ausrichtet.
 
-\subsection{Gesamtarchitektur}
+Das System arbeitet mit einer Hauptschleife mit vier logisch getrennten Verarbeitungsphasen: 
+(1) akustische Aktivierung, Richtungsschätzung der Stimme und Anpassung der Servoposition, 
+(2) Spracherkennung mit Speech-to-Text (STT), 
+(3) inhaltliche Verarbeitung über ein Large Language Model (LLM) mit optionaler Modulausführung und
+(4) Sprachausgabe mit Text-to-Speech (TTS). 
+Die einzelnen Phasen sind funktional entkoppelt und über definierte Funktionsaufrufe miteinander verbunden, wodurch die Austauschbarkeit einzelner Komponenten (z. B. STT- oder TTS-Backend) gewährleistet wird.
 
-Übersicht des Systems als Blockdiagramm
-typischer Ablauf:
-Wakeword-Erkennung
-Sprachaufnahme
-Speech-to-Text
-LLM-Verarbeitung
-Entscheidung zwischen normaler Antwort und Modulausführung
-Text-to-Speech
-visuelle Ausgabe auf dem Display
+Ein zentrales Architekturelement ist die Plugin-Schnittstelle. Über den Loader werden externe Funktionsmodule dynamisch eingebunden und dem LLM-Kontext bereitgestellt. 
+Durch den bereitgestellten Kontext kann das System zwischen generischer Antwortgenerierung und Modulausführung unterscheiden. 
+Dies ermöglicht eine Erweiterung des Basissystem, ohne dass der Kernprozess verändert werden muss.
+
+Parallelität wird gezielt für zeitkritische Teilaufgaben genutzt. 
+Die Servosteuerung erfolgt asynchron in einem separaten Thread, sodass die Audioverarbeitung nicht blockiert wird. 
+Zusätzlich wird die Zustandsumschaltung der Visualisierung während der Sprachausgabe zeitversetzt und threadbasiert umgesetzt, um eine konsistente Synchronisation zwischen auditivem und visuellem Feedback zu erreichen. 
+Fehlerfälle werden über Ausnahmebehandlung auf Schleifenebene abgefangen. 
+
+\subsubsection{(1) Aktivierung des Systems}
+
+
+\subsubsection{(2) Spracherkennung (STT)}
+
+
+\subsubsection{(3) LLM-Verarbeitung}
+
+
+\subsubsection{(4) Sprachausgabe (TTS)}
+
 
 
 \subsection{Hardwareaufbau}
@@ -72,16 +88,3 @@ Raspberry Pi wegen kompakter Bauform, breiter Community, guter Kompatibilität
 ReSpeaker wegen einfacher Integration von Sprachaufnahme in ein Embedded-System
 kompaktes Display zur lokalen visuellen Rückmeldung
 physischer Aufbau, damit Pablo als Companion wahrgenommen wird und nicht nur als Softwareprozess
-
-
-\subsection{Softwarearchitektur}
-
-modulare Python-basierte Struktur
-Trennung zwischen:
-Eingabe
-Sprachverarbeitung
-LLM-Logik
-Modulschnittstellen
-Ausgabe
-Benutzeroberfläche
-API-basierte Module als Erweiterungskonzept
