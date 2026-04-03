@@ -1,6 +1,6 @@
 \section{Hardware}
 
-Die Auswahl der Hardwarekomponenten erfolgte unter Abwägung von Kosten, Kompaktheit, Integrationsfähigkeit und Community-Unterstützung.
+Die Auswahl der Hardwarekomponenten erfolgte unter Abwägung von Kosten, Kompaktheit und Integrationsfähigkeit.
 Ziel war es, eine Systemarchitektur zu definieren, die sämtliche Funktionen des Companion-Bots in einem kompakten, eigenständigen Gerät vereint.
 Dabei wurde für jede Teilfunktion, namentlich Recheneinheit, Audioerfassung, visuelle Ausgabe, Audioausgabe und mechanische Ausrichtung, jeweils eine geeignete Komponente identifiziert und deren Integration in das Gesamtsystem geprüft.
 
@@ -10,7 +10,7 @@ Als zentrale Recheneinheit wurde ein Raspberry Pi gewählt, der aufgrund seiner 
 Für die Audioerfassung wurde der ReSpeaker 2-Mics Pi HAT eingesetzt, der neben der Sprachaufnahme auch eine richtungsbasierte Schallquellenortung ermöglicht.
 Die visuelle Ausgabe erfolgt über ein Waveshare 4-Zoll-IPS-Display, das direkt am Raspberry Pi betrieben wird.
 Als Audioausgabe dient ein 5\,W / 8\,$\Omega$-Lautsprecher, der über einen separaten Audioverstärker angesteuert wird.
-Die Stromversorgung des Verstärkers erfolgt über einen Arduino Uno, der zugleich als dedizierte Steuereinheit für die Energieversorgung der Audiokomponente fungiert.
+Die Stromversorgung des Verstärkers erfolgt über einen Arduino Uno.
 Für die mechanische Ausrichtung des Kopfteils, das aus Display und Gehäuseoberteil besteht, wird ein Servomotor eingesetzt, der über einen Arduino Nano angesteuert und seriell vom Raspberry Pi kontrolliert wird.
 Durch diese Aufteilung der Steuerungsaufgaben auf mehrere Mikrocontroller konnte die Echtzeitfähigkeit der mechanischen und audiovisuellen Komponenten sichergestellt werden, ohne die Hauptrecheneinheit zusätzlich zu belasten.
 
@@ -30,7 +30,6 @@ Diese Formgebung unterstreicht den Companion-Charakter von Pablo und schafft ein
 Eine erste zentrale Entscheidung betraf die Frage, ob Pablo als reine Softwarelösung oder als physisches Produkt umgesetzt werden soll.
 Softwarebasierte Assistenten lassen sich mit geringerem Aufwand entwickeln und auf bestehenden Endgeräten betreiben.
 Demgegenüber bietet ein physisches System eine deutlich höhere Präsenz im Alltag der Nutzenden.
-Forschungsarbeiten im Bereich der sozialen Robotik belegen, dass verkörperte Systeme eine stärkere emotionale Bindung erzeugen und als vertrauenswürdiger wahrgenommen werden als rein virtuelle Agenten.
 Die Entscheidung fiel daher bewusst zugunsten eines physischen Companion-Bots, um Pablo einen eigenständigen Produktcharakter zu verleihen und eine persönliche Bindung zu ermöglichen, die über die reine Funktionalität hinausgeht.
 
 Für die zentrale Recheneinheit wurden verschiedene Plattformen in Betracht gezogen, darunter leistungsfähigere Einplatinencomputer sowie Cloud-basierte Ansätze, bei denen die gesamte Verarbeitung auf einem externen Server erfolgt.
@@ -40,5 +39,5 @@ Zudem eignet sich der Raspberry Pi aufgrund seiner kompakten Bauform besonders g
 
 Alternativ zur Integration eines eigenen Displays wäre eine Ausgabe ausschließlich über Sprache oder über ein externes Gerät wie ein Smartphone möglich gewesen.
 Die Entscheidung für ein kompaktes, direkt im Gehäuse verbautes Display wurde getroffen, um Pablo ein lokales visuelles Feedback zu ermöglichen.
-Das Display dient der Darstellung des Avatars, der Anzeige von Statusinformationen und der visuellen Begleitung der Sprachinteraktion.
+Das Display dient der Darstellung des Avatars und der visuellen Begleitung der Sprachinteraktion.
 Durch die Integration des Displays in das Gehäuse wird Pablo als eigenständiges, in sich geschlossenes Produkt wahrnehmbar, das keine zusätzlichen externen Geräte für die Nutzung benötigt.
