@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -747,29 +747,29 @@ Package pdftex.def Info: grafiken/Hauptschleife.png  used on input line 9.
 File: grafiken/IMG_1502.png Graphic file (type png)
 <use grafiken/IMG_1502.png>
 Package pdftex.def Info: grafiken/IMG_1502.png  used on input line 15.
-(pdftex.def)             Requested size: 247.5389pt x 191.34001pt.
+(pdftex.def)             Requested size: 198.03186pt x 153.0923pt.
 <grafiken/idle_1.jpeg, id=172, 1027.84pt x 1027.84pt>
 File: grafiken/idle_1.jpeg Graphic file (type jpg)
 <use grafiken/idle_1.jpeg>
-Package pdftex.def Info: grafiken/idle_1.jpeg  used on input line 22.
-(pdftex.def)             Requested size: 87.7338pt x 87.7338pt.
+Package pdftex.def Info: grafiken/idle_1.jpeg  used on input line 21.
+(pdftex.def)             Requested size: 86.64012pt x 86.63596pt.
 <grafiken/thinking.jpeg, id=173, 1027.84pt x 1027.84pt>
 File: grafiken/thinking.jpeg Graphic file (type jpg)
 <use grafiken/thinking.jpeg>
-Package pdftex.def Info: grafiken/thinking.jpeg  used on input line 24.
-(pdftex.def)             Requested size: 87.7338pt x 87.7338pt.
+Package pdftex.def Info: grafiken/thinking.jpeg  used on input line 22.
+(pdftex.def)             Requested size: 86.64012pt x 86.63596pt.
 <grafiken/speaking_2.jpeg, id=174, 1027.84pt x 1027.84pt>
 File: grafiken/speaking_2.jpeg Graphic file (type jpg)
 <use grafiken/speaking_2.jpeg>
-Package pdftex.def Info: grafiken/speaking_2.jpeg  used on input line 28.
-(pdftex.def)             Requested size: 87.7338pt x 87.7338pt.
+Package pdftex.def Info: grafiken/speaking_2.jpeg  used on input line 26.
+(pdftex.def)             Requested size: 86.64012pt x 86.63596pt.
 <grafiken/blinking.jpeg, id=175, 1027.84pt x 1027.84pt>
 File: grafiken/blinking.jpeg Graphic file (type jpg)
 <use grafiken/blinking.jpeg>
-Package pdftex.def Info: grafiken/blinking.jpeg  used on input line 30.
-(pdftex.def)             Requested size: 87.7338pt x 87.7338pt.
+Package pdftex.def Info: grafiken/blinking.jpeg  used on input line 27.
+(pdftex.def)             Requested size: 86.64012pt x 86.63596pt.
 ) (./kapitel/07_herausforderungen.tex [5 <./grafiken/idle_1.jpeg> <./grafiken/thinking.jpeg> <./grafiken/speaking_2.jpeg> <./grafiken/blinking.jpeg> <./grafiken/IMG_1502.png>]) (./kapitel/08_fazit_ausblick.tex
-Underfull \vbox (badness 7777) has occurred while \output is active []
+Underfull \vbox (badness 2961) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1231) in paragraph at lines 18--22
@@ -796,7 +796,9 @@ Underfull \hbox (badness 2809) in paragraph at lines 75--75
 \T1/cmr/m/n/10 wick-lung tech-ni-scher Pro-duk-te und Sys-te-me --
  []
 
-[7] (./main.aux)
+[7
+
+] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -816,7 +818,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,9n,79p,735b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (9 pages, 15519018 bytes).
+Output written on main.pdf (9 pages, 15518952 bytes).
 PDF statistics:
  283 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams
