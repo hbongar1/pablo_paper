@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/helena.tex
-(/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/helena.tex
+**/Users/Elias/Documents/GitHub/pablo_paper/helena.tex
+(/Users/Elias/Documents/GitHub/pablo_paper/helena.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -718,12 +718,12 @@ Package logreq Info: Writing requests to 'helena.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  19590 strings out of 467525
- 338956 string characters out of 5418982
+ 338902 string characters out of 5418982
  1215411 words of memory out of 5000000
  48232 multiletter control sequences out of 15000+600000
  640394 words of font info for 73 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,9n,79p,755b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,9n,79p,737b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
 Output written on helena.pdf (7 pages, 14180142 bytes).
 PDF statistics:
