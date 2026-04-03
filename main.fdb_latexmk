@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1775237327.55313 "main.bcf" "main.bbl" "main" 1775245990.81831 0
-  "main.bcf" 1775245990.67321 108290 919390346cfc70c94d13261c1e2d0c89 "pdflatex"
+["biber main"] 1775237327.55313 "main.bcf" "main.bbl" "main" 1775246390.25966 0
+  "main.bcf" 1775246390.12288 108290 919390346cfc70c94d13261c1e2d0c89 "pdflatex"
   "references.bib" 1775237312.53665 2694 c14172a3f3eba4f227dae0d9758945a7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775245984.61131 "/Users/Elias/Documents/GitHub/pablo_paper/main.tex" "main.pdf" "main" 1775245990.81856 0
+["pdflatex"] 1775246384.01245 "/Users/Elias/Documents/GitHub/pablo_paper/main.tex" "main.pdf" "main" 1775246390.26225 0
   "/Users/Elias/Documents/GitHub/pablo_paper/main.tex" 1775245984.42582 2515 b9bcccb92e79704c56524c418f5f9b67 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -158,18 +158,18 @@
   "kapitel/01_einleitung.tex" 1775236086.78489 2723 5b708514b8a325cefa55bfe78ef7f01c ""
   "kapitel/02_entwicklungsprozess.tex" 1775244896.06162 1450 ec3fe7166bedc0be7cf6cb13ef557061 ""
   "kapitel/02_konzeption.tex" 1775237740.26943 3210 d2229885ff90bd1d39734f37c42a534e ""
-  "kapitel/03_hardware.tex" 1775237285.56486 4157 741c519465cc68b1edff3dc9e83449f0 ""
+  "kapitel/03_hardware.tex" 1775246383.6805 4191 b1aceacbcbd9cf733dc8f1ae9a5ad0af ""
   "kapitel/04_software.tex" 1775236446.48306 5512 d86871376dde3892730a7427346c09f5 ""
   "kapitel/05_module.tex" 1775228590.01296 2077 8c8008f3260ebe34caaf8c38af997bfa ""
   "kapitel/06_benutzererlebnis.tex" 1775243748.96572 2182 866e9f207a64b5969484f5e7deda859e ""
   "kapitel/07_herausforderungen.tex" 1775230483.59756 1918 78bb1303bf76fa5a71055f443131ed3a ""
   "kapitel/08_fazit_ausblick.tex" 1775236924.41588 4102 25a408c64e49d86cb5f0aa21585f2cdf ""
-  "main.aux" 1775245990.67036 5149 ed39b937fe079d93e46b3dcb923cb4a8 "pdflatex"
+  "main.aux" 1775246390.11959 5149 ed39b937fe079d93e46b3dcb923cb4a8 "pdflatex"
   "main.bbl" 1775237330.12949 15115 bc7e9775eeef1af6a6c52482f39ba7d5 "biber main"
-  "main.out" 1775245990.67227 2579 964f162611faad838e959948187cd004 "pdflatex"
-  "main.run.xml" 1775245990.67389 2432 49ce9cc1c2e214794d05d7a5a4d87ddd "pdflatex"
+  "main.out" 1775246390.12181 2579 964f162611faad838e959948187cd004 "pdflatex"
+  "main.run.xml" 1775246390.1238 2432 49ce9cc1c2e214794d05d7a5a4d87ddd "pdflatex"
   "main.tex" 1775245984.42582 2515 b9bcccb92e79704c56524c418f5f9b67 ""
-  "main.toc" 1775245990.67395 1659 84060d3d562ca317b311864fc172795a "pdflatex"
+  "main.toc" 1775246390.12389 1659 84060d3d562ca317b311864fc172795a "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
