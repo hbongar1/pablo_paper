@@ -16,5 +16,341 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{hoy2018alexa}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3153dbf93c11ed5fe20965c6a9149165}{%
+           family={Hoy},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{fullhash}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{fullhashraw}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{bibnamehash}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{authorbibnamehash}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{authornamehash}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{authorfullhash}{3153dbf93c11ed5fe20965c6a9149165}
+      \strng{authorfullhashraw}{3153dbf93c11ed5fe20965c6a9149165}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical Reference Services Quarterly}
+      \field{number}{1}
+      \field{title}{Alexa, Siri, Cortana, and More: An Introduction to Voice Assistants}
+      \field{volume}{37}
+      \field{year}{2018}
+      \field{pages}{81\bibrangedash 88}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1080/02763869.2018.1404391
+      \endverb
+    \endentry
+    \entry{kepuska2018next}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b5956376975af409647f48a0681f201c}{%
+           family={Kepuska},
+           familyi={K\bibinitperiod},
+           given={Veton},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5800aea346e39a58a2ffb7034e80d767}{%
+           family={Bohouta},
+           familyi={B\bibinitperiod},
+           given={Gamal},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{fullhash}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{fullhashraw}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{bibnamehash}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{authorbibnamehash}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{authornamehash}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{authorfullhash}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \strng{authorfullhashraw}{b02a0b14a2c1605c08d249595dbb7c8d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE 8th Annual Computing and Communication Workshop and Conference (CCWC)}
+      \field{title}{Next-Generation of Virtual Personal Assistants ({Microsoft Cortana, Apple Siri, Amazon Alexa} and {Google Home})}
+      \field{year}{2018}
+      \field{pages}{99\bibrangedash 103}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/CCWC.2018.8301638
+      \endverb
+    \endentry
+    \entry{zhao2023survey}{article}{}{}
+      \name{author}{22}{}{%
+        {{hash=64942cca497eff6cd6c5b264afdc5dd6}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Wayne\bibnamedelima Xin},
+           giveni={W\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=09d5d500b34786c94a128e6f131300c6}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0da53871c5bda3ae9ea7b5d31b6a8874}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Junyi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e2be20b0e2f21891a3e428cfe3aa7546}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Tianyi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=66a2746de95223ec2e9e78a901ee1cf8}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaolei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=678f15f5b4dbc1aaed429148209c1670}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Yupeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8562df4cc1bfda084b6452e14b97695f}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={Yingqian},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=66e96b863923db3bc1db16a09cac3390}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Beichen},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c8c6aaec4b7602bed8057718ff85cf50}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Junjie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e9c75837177b3f19580db0d34a05273}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Zican},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8b52fd6470026437f20bf1d0e1302c61}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7c12c6bb81a430b19d464d25687cbb9c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e6a4c63d4fa7aa7e88a4945488e9e901}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yushuo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d7c54e1ab3bee583739e4680a3468f41}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhipeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=cc99c740260c641786a83c5c0f63f879}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Jinhao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e264ac8fc96cdfd270409514441211ba}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Ruiyang},
+           giveni={R\bibinitperiod}}}%
+        {{hash=de4f40f58ec11067811bb3cfff116450}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b26374d4fa3f66d7e5b787db7f8b46fc}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Xinyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=eb761f0ec974830dfebae92d776d3bbe}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zikang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=309831086a45c94ff1c5e5627e77920a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Peiyu},
+           giveni={P\bibinitperiod}}}%
+        {{hash=249bb150525fcf94fd8a35571a611e24}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Jian-Yun},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=5ff29ba5ea8e6fdd73a84f998eec45f2}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Ji-Rong},
+           giveni={J\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{95cd3bb658a9c68cd3372dc5bc22e0cf}
+      \strng{fullhash}{6e1e8e169a53770141a3c2e593b18acb}
+      \strng{fullhashraw}{6e1e8e169a53770141a3c2e593b18acb}
+      \strng{bibnamehash}{95cd3bb658a9c68cd3372dc5bc22e0cf}
+      \strng{authorbibnamehash}{95cd3bb658a9c68cd3372dc5bc22e0cf}
+      \strng{authornamehash}{95cd3bb658a9c68cd3372dc5bc22e0cf}
+      \strng{authorfullhash}{6e1e8e169a53770141a3c2e593b18acb}
+      \strng{authorfullhashraw}{6e1e8e169a53770141a3c2e593b18acb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2303.18223}
+      \field{title}{A Survey of Large Language Models}
+      \field{year}{2023}
+    \endentry
+    \entry{bentley2018understanding}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=5358787260065b531e82f9eb71c5fa45}{%
+           family={Bentley},
+           familyi={B\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b9ce734ee9aebfe1fc388a81dd94c257}{%
+           family={Luvogt},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=04b21a9b0681e20b63c2e0fad7e3443b}{%
+           family={Silverman},
+           familyi={S\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0f72c4bd7a552344524adaf52230b08b}{%
+           family={Wirasinghe},
+           familyi={W\bibinitperiod},
+           given={Rushil},
+           giveni={R\bibinitperiod}}}%
+        {{hash=836bac185b97dfb816ca79238ad193ec}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Brooke},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d15148a4471c2d0e0b0823cc19684e25}{%
+           family={Lottridge},
+           familyi={L\bibinitperiod},
+           given={Danielle},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{64f4c799c01b30779df31c1993ba9846}
+      \strng{fullhash}{18014c80089197ddf98a4d8b8dffce61}
+      \strng{fullhashraw}{18014c80089197ddf98a4d8b8dffce61}
+      \strng{bibnamehash}{18014c80089197ddf98a4d8b8dffce61}
+      \strng{authorbibnamehash}{18014c80089197ddf98a4d8b8dffce61}
+      \strng{authornamehash}{64f4c799c01b30779df31c1993ba9846}
+      \strng{authorfullhash}{18014c80089197ddf98a4d8b8dffce61}
+      \strng{authorfullhashraw}{18014c80089197ddf98a4d8b8dffce61}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies}
+      \field{number}{3}
+      \field{title}{Understanding the Long-Term Use of Smart Speaker Assistants}
+      \field{volume}{2}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1145/3264901
+      \endverb
+    \endentry
+    \entry{li2015benefit}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=369791ed42f228ea69b63d7ea1d1037c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jamy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{fullhash}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{fullhashraw}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{bibnamehash}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{authorbibnamehash}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{authornamehash}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{authorfullhash}{369791ed42f228ea69b63d7ea1d1037c}
+      \strng{authorfullhashraw}{369791ed42f228ea69b63d7ea1d1037c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Studies}
+      \field{title}{The Benefit of Being Physically Present: A Survey of Experimental Works Comparing Copresent Robots, Telepresent Robots and Virtual Agents}
+      \field{volume}{77}
+      \field{year}{2015}
+      \field{pages}{23\bibrangedash 37}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.ijhcs.2015.01.001
+      \endverb
+    \endentry
+    \entry{belpaeme2018social}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=492be106dd40848213cde7a05c654bea}{%
+           family={Belpaeme},
+           familyi={B\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+        {{hash=24fc7a255aa314e71ac724efd7ca5193}{%
+           family={Kennedy},
+           familyi={K\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1e01fcc198ef3c02ac682cf0694ea6d5}{%
+           family={Ramachandran},
+           familyi={R\bibinitperiod},
+           given={Aditi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=052e75642103215e79dde81e3e348764}{%
+           family={Scassellati},
+           familyi={S\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=36676fc94e74356863c6f2222bb83cdb}{%
+           family={Tanaka},
+           familyi={T\bibinitperiod},
+           given={Fumihide},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a559a70c7bd3494f7530d6502aca49a4}
+      \strng{fullhash}{971271e2712daae5a26c086a538749cf}
+      \strng{fullhashraw}{971271e2712daae5a26c086a538749cf}
+      \strng{bibnamehash}{971271e2712daae5a26c086a538749cf}
+      \strng{authorbibnamehash}{971271e2712daae5a26c086a538749cf}
+      \strng{authornamehash}{a559a70c7bd3494f7530d6502aca49a4}
+      \strng{authorfullhash}{971271e2712daae5a26c086a538749cf}
+      \strng{authorfullhashraw}{971271e2712daae5a26c086a538749cf}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science Robotics}
+      \field{number}{21}
+      \field{title}{Social Robots for Education: A Review}
+      \field{volume}{3}
+      \field{year}{2018}
+      \field{pages}{eaat5954}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/scirobotics.aat5954
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

@@ -1,42 +1,72 @@
 \section{Entwicklungsprozess}
 
+Die Entwicklung von Pablo folgte einem iterativen Vorgehen, das sich methodisch an der VDI~2221
+/2206 orientiert.
+Ausgehend von einer initialen Konzeptionsphase wurde das System schrittweise aufgebaut, wobei in jeder Iteration Hardware- und Softwarekomponenten parallel weiterentwickelt und integriert wurden.
+Im Folgenden werden die Konzeption, die einzelnen Entwicklungsphasen sowie die dabei aufgetretenen praktischen Herausforderungen beschrieben.
+
 
 \subsection{Konzeption}
 
-erste Ideenfindung
-Zielgruppenüberlegung
-Festlegung des Produktcharakters: nicht nur Assistent, sondern Companion
-Definition der Kernfunktionen
+Am Ausgangspunkt der Entwicklung stand die Beobachtung, dass im Alltag häufig kleine Aufgaben, spontane Ideen und Erinnerungen anfallen, die in der Regel unstrukturiert bleiben.
+Bestehende digitale Assistenzsysteme bieten zwar Unterstützung bei einzelnen Aufgaben, sind jedoch überwiegend als rein softwarebasierte oder in geschlossene Ökosysteme eingebettete Lösungen konzipiert.
+Die erste Ideenfindung zielte daher auf ein System, das diese Lücke durch eine physisch präsente, offene und erweiterbare Lösung schließt.
+
+Im Rahmen der Zielgruppenanalyse wurde festgestellt, dass insbesondere Personen im häuslichen oder studentischen Umfeld von einem kompakten Schreibtischassistenten profitieren können, der ohne Smartphone oder Computer bedienbar ist.
+Daraus ergab sich die bewusste Entscheidung, Pablo nicht ausschließlich als funktionalen Assistenten zu konzipieren, sondern als \textit{Companion}, also ein System, das durch seine physische Gestalt, seine visuelle Identität und seine Interaktionsweise eine persönliche Bindung ermöglicht.
+Die Verkörperung als Pixel-Art-Faultier in einem baumstammförmigen Gehäuse unterstreicht diesen Companion-Charakter und schafft eine niedrigschwellige, sympathische Zugangsmöglichkeit.
+
+Auf Grundlage dieser Überlegungen wurden die Kernfunktionen definiert: Wakeword-basierte Aktivierung, sprachliche Interaktion über ein LLM, konkrete Alltagsfunktionen (Notizen, Kalender, Timer, Wetterabfrage) sowie visuelle Rückmeldung über ein integriertes Display.
+Diese Funktionen bilden den minimalen Umfang des angestrebten MVP und wurden so gewählt, dass sie den modularen Charakter des Systems demonstrieren.
 
 
 \subsection{Iterative Entwicklung}
 
-Hier könnt ihr den Prozess als mehrere Phasen darstellen.
-Beispielhafte Phasen
-Phase 1: Grundidee und Funktionsrahmen
-Welche Rolle soll Pablo haben?
-Welche Minimalfunktionen sind notwendig?
-Phase 2: Hardwareauswahl
-Auswahl von Raspberry Pi, Mikrofon, Display, Lautsprecher
-Abwägung zwischen Aufwand, Kosten, Kompaktheit und Integrationsfähigkeit
-Phase 3: Implementierung der Sprachpipeline
-Wakeword, STT, LLM, TTS
-erste lauffähige Systemkette
-Phase 4: Integration von Modulen
-Einbindung externer Funktionen über APIs
-Schaffung einer einheitlichen Modulstruktur
-Phase 5: Benutzererlebnis und Persona
-visuelle Gestaltung
-Charakter von Pablo
-Optimierung der Interaktion
+Die Umsetzung von Pablo erfolgte in fünf aufeinander aufbauenden Entwicklungsphasen, die jeweils mit einem definierten Zwischenstand abgeschlossen wurden.
+
+\paragraph{Phase~1: Grundidee und Funktionsrahmen.}
+In der ersten Phase wurde die grundlegende Systemidee konkretisiert und der funktionale Rahmen festgelegt.
+Zentrale Fragestellungen waren, welche Rolle Pablo im Alltag der Nutzenden einnehmen soll und welche Minimalfunktionen für einen sinnvollen Prototyp notwendig sind.
+Ergebnis dieser Phase war ein technisches Konzeptdokument, das die Systemgrenzen, die angestrebte Interaktionsform und die geplante Modulstruktur beschreibt.
+
+\paragraph{Phase~2: Hardwareauswahl und Aufbau.}
+In der zweiten Phase wurden die Hardwarekomponenten des Systems ausgewählt und zu einem ersten physischen Aufbau zusammengeführt.
+Die Auswahl erfolgte unter Abwägung von Kosten, Kompaktheit, Integrationsfähigkeit und Community-Unterstützung.
+Im Ergebnis wurde eine Systemarchitektur definiert, die eine zentrale Recheneinheit, eine Mikrofoneinheit, ein Display, einen Lautsprecher mit Verstärker sowie einen Servomotor für die mechanische Ausrichtung des Kopfteils umfasst.
+Die konkreten Komponenten und deren Zusammenspiel werden in Kapitel~\ref{sec:systemkonzept} beschrieben.
+
+\paragraph{Phase~3: Implementierung der Sprachpipeline.}
+In der dritten Phase wurde die zentrale Verarbeitungskette für die sprachliche Interaktion aufgebaut.
+Diese umfasst vier sequenzielle Stufen: Wakeword-Erkennung, Spracherkennung (Speech-to-Text), inhaltliche Verarbeitung über ein Large Language Model sowie Sprachausgabe (Text-to-Speech).
+Ziel dieser Phase war eine erste durchgängig lauffähige Systemkette, in der eine gesprochene Anfrage vollständig erfasst, verarbeitet und beantwortet werden kann.
+Die einzelnen Komponenten wurden bewusst als austauschbare Module implementiert, um eine spätere Anpassung einzelner Stufen zu ermöglichen.
+
+\paragraph{Phase~4: Integration von Funktionsmodulen.}
+Aufbauend auf der funktionierenden Sprachpipeline wurden in der vierten Phase konkrete Alltagsfunktionen als eigenständige Module integriert.
+Dazu zählen unter anderem Wetterabfragen, Kalendereinträge, Timer und das Erstellen von Notizen.
+Die Einbindung erfolgt über eine einheitliche Plugin-Schnittstelle, die es dem System ermöglicht, kontextbezogen zwischen allgemeiner Antwortgenerierung und gezielter Modulausführung zu unterscheiden.
+Diese Architektur bildet die Grundlage für die angestrebte langfristige Erweiterbarkeit des Systems.
+
+\paragraph{Phase~5: Benutzererlebnis und Persona.}
+In der abschließenden Phase lag der Fokus auf dem Benutzererlebnis und der visuellen Identität von Pablo.
+Das Gehäuse wurde als 3D-gedruckter Baumstamm gestaltet, in dem sämtliche Hardwarekomponenten untergebracht sind.
+Auf dem Display wird Pablo als animiertes Pixel-Art-Faultier dargestellt, das je nach Systemzustand unterschiedliche visuelle Zustände zeigt.
+Darüber hinaus wurde die Interaktion hinsichtlich Antwortzeiten, Sprachausgabequalität und visueller Synchronisation optimiert.
 
 
 \subsection{Praktische Herausforderungen}
 
-Das ist für ein gutes Paper sehr wertvoll.
-Beispiele aus eurem Projekt
-Startprobleme beim automatischen Booten
-Timing-Probleme zwischen GUI, Audio und Service-Start
-Audioeingabe funktionierte nach Systemstart nicht immer zuverlässig
-Integration verschiedener Hard- und Softwarekomponenten auf Embedded-Hardware
-Balance zwischen technischer Funktionalität und angenehmer Nutzerinteraktion
+Im Verlauf der Entwicklung traten mehrere technische Herausforderungen auf, die exemplarisch für die Komplexität eingebetteter Systeme mit heterogener Hardware- und Softwarelandschaft stehen.
+
+Ein wiederkehrendes Problem betraf den automatischen Systemstart nach dem Booten des Raspberry~Pi.
+Da mehrere Dienste, namentlich die grafische Benutzeroberfläche, der Audiotreiber und der Pablo-Service, beim Hochfahren parallel initialisiert werden, kam es zu Timing-Konflikten.
+Insbesondere die Audioeingabe über den ReSpeaker-HAT war nach dem Systemstart nicht immer zuverlässig verfügbar, da der entsprechende ALSA-Treiber erst nach einer systemabhängigen Verzögerung vollständig geladen wurde.
+Diese Problematik wurde durch eine gezielte Startverzögerung und eine Prüfschleife auf Verfügbarkeit der Audioquelle adressiert.
+
+Eine weitere Herausforderung lag in der Integration der unterschiedlichen Hard- und Softwarekomponenten auf der begrenzten Embedded-Plattform.
+Die Kombination aus Raspberry~Pi, zwei Arduino-Mikrocontrollern, dem Mikrofon-HAT, Display und Audioverstärker erforderte eine sorgfältige Abstimmung der seriellen Kommunikation, der Stromversorgung und der GPIO-Belegung.
+Fehler in der Verkabelung oder Timing-Abweichungen in der seriellen Kommunikation mit den Arduinos führten wiederholt zu schwer reproduzierbaren Fehlerbildern, die nur durch systematisches Testen und schrittweise Integration gelöst werden konnten.
+
+Schließlich stellte die Balance zwischen technischer Funktionalität und einem angenehmen Nutzungserlebnis eine übergreifende Herausforderung dar.
+So war die reine Funktionsfähigkeit der Sprachpipeline zwar vergleichsweise früh erreicht, die wahrgenommene Qualität der Interaktion wurde jedoch maßgeblich durch Faktoren wie Antwortlatenz, Sprachausgabequalität und die Synchronisation zwischen visueller Darstellung und Audiowiedergabe beeinflusst.
+Die Optimierung dieser Aspekte erforderte iteratives Anpassen und Testen über mehrere Entwicklungszyklen hinweg.

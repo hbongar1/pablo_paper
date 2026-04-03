@@ -1,7 +1,22 @@
 \section{Einleitung}
 
-Motivation für einen Desk-Companion-Bot
-Einordnung in den Kontext sprachbasierter Assistenzsysteme (bisschen SOTA)
-Besonderheit von Pablo: physische Verkörperung, modulare Erweiterbarkeit, alltagsnahe Nutzung
-Ziel des Projekts
+Der Umgang mit digitalen Assistenzsystemen hat sich in den vergangenen Jahren grundlegend verändert.
+Sprachbasierte Systeme wie Amazon Alexa, Google Assistant und Apple Siri sind heute in Millionen von Haushalten verfügbar und ermöglichen eine freihändige, niedrigschwellige Interaktion im Alltag~\cite{hoy2018alexa, kepuska2018next}.
+Parallel dazu haben Fortschritte im Bereich der großen Sprachmodelle (Large Language Models, LLMs) die Qualität maschinell generierter Antworten erheblich gesteigert, sodass natürlichsprachliche Dialoge zunehmend flüssig und kontextbezogen geführt werden können~\cite{zhao2023survey}.
+Diese Entwicklung hat die Erwartungen an digitale Assistenzsysteme nachhaltig verändert: Nutzende setzen zunehmend voraus, dass Systeme nicht nur einzelne Befehle ausführen, sondern flexibel auf offene Fragestellungen reagieren und sich in individuelle Arbeitsabläufe einfügen.
 
+Trotz der breiten Verbreitung sprachbasierter Assistenten bestehen wesentliche Einschränkungen, die deren Einsatz im persönlichen Umfeld begrenzen.
+Kommerzielle Systeme sind überwiegend als geschlossene Plattformen konzipiert, deren Funktionsumfang herstellerseitig definiert und nur eingeschränkt anpassbar ist~\cite{bentley2018understanding}.
+Darüber hinaus reduziert sich die Interaktion in der Regel auf rein auditive Ein- und Ausgabe, ohne dass eine physische Präsenz oder visuelle Rückmeldung das Nutzungserlebnis ergänzt.
+Forschungsarbeiten im Bereich der sozialen Robotik zeigen jedoch, dass die physische Verkörperung eines Systems einen positiven Einfluss auf die wahrgenommene Vertrauenswürdigkeit, die emotionale Bindung und die langfristige Nutzungsbereitschaft haben kann~\cite{li2015benefit, belpaeme2018social}.
+Ein Assistenzsystem, das als greifbares, sichtbares Gegenüber im Alltag wahrgenommen wird, besitzt demnach ein qualitativ anderes Interaktionspotenzial als ein reiner Softwareagent.
+
+An diesem Punkt setzt das vorliegende Projekt an.
+Pablo ist ein kompakter Desk-Companion-Bot, der sprachbasierte Assistenzfunktionen mit einer physischen Verkörperung in Form eines 3D-gedruckten Gehäuses, eines integrierten Displays und eines beweglichen Gelenks vereint.
+Im Unterschied zu bestehenden Systemen verfolgt Pablo einen bewusst modularen und offenen Ansatz: Durch eine Plugin-basierte Softwarearchitektur können Funktionsmodule -- etwa Notiz- und Kalenderverwaltung, Timer oder Wetterabfragen -- bedarfsgerecht ergänzt und individuell angepasst werden, ohne den Kernprozess verändern zu müssen.
+Die zugrunde liegende Hardware basiert auf einem Raspberry Pi und ermöglicht eine kostengünstige, eigenständige Umsetzung.
+Durch die Kombination aus natürlicher Sprachinteraktion, visueller Darstellung und physischer Ausrichtung zur sprechenden Person soll Pablo als persönlicher Companion wahrgenommen werden, der sich nahtlos in den Arbeitsplatz oder das häusliche Umfeld einfügt.
+
+Ziel dieses Projekts ist die Entwicklung eines funktionalen Minimum Viable Products (MVP), das die technische Machbarkeit und das Interaktionskonzept eines solchen Desk-Companion-Bots demonstriert.
+Die vorliegende Dokumentation beschreibt den vollständigen Entwicklungsprozess -- von der Konzeption über die Hard- und Softwareentwicklung bis hin zur Integration und Evaluierung des Gesamtsystems.
+Dabei orientiert sich die Entwicklung methodisch an der VDI~2221/2206 und gliedert sich in klar definierte Projektphasen.

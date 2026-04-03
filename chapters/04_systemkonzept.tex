@@ -1,4 +1,5 @@
 \section{Produktbeschreibung}
+\label{sec:systemkonzept}
 
 Pablo ist ein kompakter Desk-Companion-Bot, der zur Unterstützung von Nutzenden im Alltag entwickelt wurde. 
 Das Produkt wurde als physisch präsentes Assistenzsystem konzipiert, das im direkten Umfeld der Nutzenden eingesetzt werden kann und eine niedrigschwellige Interaktion ermöglicht. 
@@ -73,17 +74,16 @@ Fehlerfälle werden über Ausnahmebehandlung auf Schleifenebene abgefangen.
 
 
 \subsection{Hardwareaufbau}
+\label{sec:hardware}
 
-Hier muss die Hardware explizit rein.
-Mögliche Unterpunkte
-Recheneinheit: Raspberry Pi
-Mikrofoneinheit: ReSpeaker 2-Mics Pi HAT
-Display: Waveshare 4" IPS LCD
-Audioausgabe: Lautsprecher
-Gehäuse / physische Integration
-visuelle Identität: Pixel-Art-Faultier „Pablo“
-Sinnvolle Begründungen
-Raspberry Pi wegen kompakter Bauform, breiter Community, guter Kompatibilität
-ReSpeaker wegen einfacher Integration von Sprachaufnahme in ein Embedded-System
-kompaktes Display zur lokalen visuellen Rückmeldung
-physischer Aufbau, damit Pablo als Companion wahrgenommen wird und nicht nur als Softwareprozess
+Die Auswahl der Hardwarekomponenten erfolgte unter Abwägung von Kosten, Kompaktheit, Integrationsfähigkeit und Community-Unterstützung.
+Als zentrale Recheneinheit wurde ein Raspberry Pi gewählt, der aufgrund seiner kompakten Bauform, breiten Softwarekompatibilität und umfangreichen Community-Dokumentation eine geeignete Plattform für ein Embedded-Assistenzsystem darstellt.
+Für die Audioerfassung wurde der ReSpeaker 2-Mics Pi HAT eingesetzt, der neben der Sprachaufnahme auch eine richtungsbasierte Schallquellenortung ermöglicht.
+Die visuelle Ausgabe erfolgt über ein Waveshare 4-Zoll-IPS-Display, das direkt am Raspberry Pi betrieben wird.
+Als Audioausgabe dient ein 5\,W / 8\,$\Omega$-Lautsprecher, der über einen separaten Audioverstärker angesteuert wird.
+Die Stromversorgung des Verstärkers erfolgt über einen Arduino Uno, der zugleich als dedizierte Steuereinheit für die Energieversorgung der Audiokomponente fungiert.
+Für die mechanische Ausrichtung des Kopfteils, das aus Display und Gehäuseoberteil besteht, wird ein Servomotor eingesetzt, der über einen Arduino Nano angesteuert und seriell vom Raspberry Pi kontrolliert wird.
+Durch diese Aufteilung der Steuerungsaufgaben auf mehrere Mikrocontroller konnte die Echtzeitfähigkeit der mechanischen und audiovisuellen Komponenten sichergestellt werden, ohne die Hauptrecheneinheit zusätzlich zu belasten.
+
+Das Gehäuse wurde als 3D-gedruckter Baumstamm gestaltet und nimmt sämtliche Hardwarekomponenten auf.
+Diese Formgebung unterstreicht den Companion-Charakter von Pablo und schafft eine visuelle Abgrenzung gegenüber rein technischen Geräten.

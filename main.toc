@@ -1,22 +1,30 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
-\contentsline {section}{\numberline {2}Entwicklungsprozess}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Konzeption}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Iterative Entwicklung}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Praktische Herausforderungen}{2}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Produktbeschreibung}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Kernfunktionen}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Softwarearchitektur}{3}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}(1) Aktivierung des Systems}{4}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}(2) Spracherkennung (STT)}{4}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}(3) LLM-Verarbeitung}{4}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}(4) Sprachausgabe (TTS)}{4}{subsubsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Hardwareaufbau}{4}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Begründung zentraler Entwicklungsentscheidungen}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Entscheidung für einen physischen Companion statt reinem Softwareassistenten}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Entscheidung für modular erweiterbare API-Struktur}{5}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Entscheidung für Raspberry-Pi-basierte Hardware}{5}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Entscheidung für Wakeword- und Sprachsteuerung}{5}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Entscheidung für eine visuelle Persona}{5}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Entscheidung für ein kompaktes Display}{5}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Ergebnis und kritische Einordnung}{5}{section.5}%
+\contentsline {section}{\numberline {2}Anforderungsdefinition}{3}{section.2}%
+\contentsline {subsubsection}{\numberline {2.0.1}Funktionale Anforderungen}{3}{subsubsection.2.0.1}%
+\contentsline {subsubsection}{\numberline {2.0.2}Nicht-funktionale Anforderungen}{3}{subsubsection.2.0.2}%
+\contentsline {section}{\numberline {3}Entwicklungsprozess}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Konzeption}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Iterative Entwicklung}{4}{subsection.3.2}%
+\contentsline {paragraph}{Phase~1: Grundidee und Funktionsrahmen.}{4}{section*.2}%
+\contentsline {paragraph}{Phase~2: Hardwareauswahl und Aufbau.}{4}{section*.3}%
+\contentsline {paragraph}{Phase~3: Implementierung der Sprachpipeline.}{4}{section*.4}%
+\contentsline {paragraph}{Phase~4: Integration von Funktionsmodulen.}{5}{section*.5}%
+\contentsline {paragraph}{Phase~5: Benutzererlebnis und Persona.}{5}{section*.6}%
+\contentsline {subsection}{\numberline {3.3}Praktische Herausforderungen}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Produktbeschreibung}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Kernfunktionen}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Softwarearchitektur}{7}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}(1) Aktivierung des Systems}{8}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}(2) Spracherkennung (STT)}{8}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}(3) LLM-Verarbeitung}{8}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}(4) Sprachausgabe (TTS)}{8}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Hardwareaufbau}{8}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Begründung zentraler Entwicklungsentscheidungen}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Entscheidung für einen physischen Companion statt reinem Softwareassistenten}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Entscheidung für modular erweiterbare API-Struktur}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Entscheidung für Raspberry-Pi-basierte Hardware}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Entscheidung für Wakeword- und Sprachsteuerung}{9}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Entscheidung für eine visuelle Persona}{9}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Entscheidung für ein kompaktes Display}{9}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Ergebnis und kritische Einordnung}{9}{section.6}%
