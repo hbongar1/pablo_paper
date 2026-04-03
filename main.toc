@@ -24,6 +24,7 @@
 \contentsline {subsection}{\numberline {4.4}Wakeword- und Sprachsteuerung}{9}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Visuelle Persona}{9}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Kompaktes integriertes Display}{9}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Ergebnis und kritische Einordnung}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Praktische Herausforderungen}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Ausblick}{11}{subsection.5.2}%
+\contentsline {section}{\numberline {5}Praktische Herausforderungen}{10}{section.5}%
+\contentsline {section}{\numberline {6}Ergebnis und kritische Einordnung}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Praktische Herausforderungen}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Ausblick}{12}{subsection.6.2}%
