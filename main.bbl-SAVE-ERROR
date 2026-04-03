@@ -351,34 +351,4 @@
       \endverb
     \endentry
     \entry{vdi2221}{report}{}{}
-      \name{author}{1}{}{%
-        {{hash=b72003ef20a8eeaaf8ea3204757fd44e}{%
-           family={{Verein Deutscher Ingenieure}},
-           familyi={V\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {VDI-Gesellschaft Produkt- und Prozessgestaltung}%
-      }
-      \list{location}{1}{%
-        {Düsseldorf}%
-      }
-      \strng{namehash}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{fullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{fullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{bibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{authorbibnamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{authornamehash}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{authorfullhash}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \strng{authorfullhashraw}{b72003ef20a8eeaaf8ea3204757fd44e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{VDI 2221: Entwicklung technischer Produkte und Systeme -- Modell der Produktentwicklung}
-      \field{type}{techreport}
-      \field{year}{2019}
-    \endentry
-  \enddatalist
-\endrefsection
-\endinput
-
+      \na

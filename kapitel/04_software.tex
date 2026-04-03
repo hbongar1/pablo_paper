@@ -4,7 +4,12 @@ Im Bereich der Softwarearchitektur wurde die zentrale Verarbeitungskette für di
 Ziel war es, eine durchgängig lauffähige Systemkette zu entwickeln, in der eine gesprochene Anfrage vollständig erfasst, verarbeitet und beantwortet werden kann.
 
 \subsection{Ergebnis}
-
+\begin{figure*}[!t]
+	\centering
+	\includegraphics[width=0.75\textwidth]{grafiken/Hauptschleife.png}
+	\caption{Ablauf der Hauptschleife von Pablo.}
+	\label{fig:hauptschleife}
+\end{figure*}
 Die Softwarearchitektur von Pablo basiert auf einer modularen, ereignisgesteuerten Python-Struktur mit Trennung zwischen Ein- und Ausgabe, Dialogverarbeitung sowie Hardwaresteuerung. 
 Beim Start werden zunächst die Systemkonfiguration, die verfügbaren Plugin-Module und die visuelle Prozessdarstellung initialisiert. 
 Anschließend wird der Wakeword- und Richtungsdetektor konfiguriert, der als Trigger-Komponente für die Interaktionsschleife fungiert.
@@ -37,13 +42,6 @@ Die Plugins kapseln die Logik für Wetter, Notizen, Kalender und Timer.
 Die Sprachausgabe wird lokal mit Piper generiert (deutsches Modell \texttt{de\_DE-thorsten-low.onnx}). 
 Der Text wird in eine WAV-Datei gerendert und über einen System-Audio-Player abgespielt. 
 Vor dem eigentlichen Audiomaterial wird eine führende Stille eingefügt, sodass die visuelle Feedback-Umschaltung mit dem tatsächlichen Audiobeginn zeitlich synchronisiert ist.
-
-\begin{figure*}[htbp]
-	\centering
-	\includegraphics[width=0.75\textwidth]{grafiken/Hauptschleife.png}
-	\caption{Ablauf der Hauptschleife von Pablo.}
-	\label{fig:hauptschleife}
-\end{figure*}
 
 Die einzelnen Phasen sind funktional entkoppelt und über definierte Funktionsaufrufe miteinander verbunden.
 Fehlerfälle werden über Ausnahmebehandlung auf Schleifenebene abgefangen. 
