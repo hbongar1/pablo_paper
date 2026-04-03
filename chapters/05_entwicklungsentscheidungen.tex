@@ -1,49 +1,47 @@
 \section{Begründung zentraler Entwicklungsentscheidungen}
 
+Im Verlauf der Entwicklung wurden mehrere grundlegende Entscheidungen getroffen, die den Charakter, die Architektur und die technische Umsetzung von Pablo maßgeblich geprägt haben.
+Im Folgenden werden diese Entscheidungen jeweils mit den betrachteten Alternativen und der jeweiligen Begründung dargestellt.
 
+\subsection{Physischer Companion statt reiner Softwareassistent}
 
-Diesen Abschnitt würde ich ausdrücklich separat machen, weil die Aufgabenstellung genau das fordert.
-Hier beschreibt ihr nicht nur Entscheidungen, sondern immer auch:Alternative – Auswahl – Begründung
+Eine erste zentrale Entscheidung betraf die Frage, ob Pablo als reine Softwarelösung oder als physisches Produkt umgesetzt werden soll.
+Softwarebasierte Assistenten lassen sich mit geringerem Aufwand entwickeln und auf bestehenden Endgeräten betreiben.
+Demgegenüber bietet ein physisches System eine deutlich höhere Präsenz im Alltag der Nutzenden.
+Forschungsarbeiten im Bereich der sozialen Robotik belegen, dass verkörperte Systeme eine stärkere emotionale Bindung erzeugen und als vertrauenswürdiger wahrgenommen werden als rein virtuelle Agenten.
+Die Entscheidung fiel daher bewusst zugunsten eines physischen Companion-Bots, um Pablo einen eigenständigen Produktcharakter zu verleihen und eine persönliche Bindung zu ermöglichen, die über die reine Funktionalität hinausgeht.
 
+\subsection{Modular erweiterbare Plugin-Struktur}
 
-\subsection{Entscheidung für einen physischen Companion statt reinem Softwareassistenten}
+Für die Softwarearchitektur wurde zwischen einer monolithischen Implementierung mit fest integrierten Funktionen und einer modularen Plugin-Struktur mit dynamischer Erweiterbarkeit abgewogen.
+Eine monolithische Lösung wäre in der initialen Entwicklung einfacher umsetzbar gewesen, hätte jedoch jede funktionale Erweiterung an eine Veränderung des Kernprozesses gebunden.
+Die Entscheidung fiel auf eine modulare API-basierte Struktur, da diese es ermöglicht, neue Funktionen nachträglich zu ergänzen, ohne bestehenden Code verändern zu müssen.
+Darüber hinaus erhöht die modulare Architektur die Anpassbarkeit an unterschiedliche Zielgruppen und Nutzungsszenarien und schafft eine Grundlage für ein langfristiges Open-Source-Ökosystem.
 
-höhere Präsenz
-stärkere emotionale Bindung
-direkterer Produktcharakter
+\subsection{Raspberry Pi als zentrale Recheneinheit}
 
+Für die zentrale Recheneinheit wurden verschiedene Plattformen in Betracht gezogen, darunter leistungsfähigere Einplatinencomputer sowie Cloud-basierte Ansätze, bei denen die gesamte Verarbeitung auf einem externen Server erfolgt.
+Die Entscheidung fiel auf einen Raspberry Pi, da dieser eine gute Verfügbarkeit, eine breite Community-Unterstützung und eine ausreichende Schnittstellenvielfalt für die Anbindung von Mikrofon, Display, Lautsprecher und Mikrocontrollern bietet.
+Obwohl die Rechenleistung im Vergleich zu leistungsstärkeren Alternativen begrenzt ist, reicht sie für die lokale Koordination der einzelnen Systemkomponenten aus.
+Zudem eignet sich der Raspberry Pi aufgrund seiner kompakten Bauform besonders gut für den Einsatz in einem Prototyp mit begrenztem Gehäusevolumen.
 
-\subsection{Entscheidung für modular erweiterbare API-Struktur}
+\subsection{Wakeword- und Sprachsteuerung}
 
-neue Funktionen können nachträglich ergänzt werden
-hohe Anpassbarkeit an verschiedene Zielgruppen
-Open-Source-Potenzial
+Für die Aktivierung und Steuerung des Systems wurden neben der Sprachsteuerung auch physische Eingabemethoden wie Tasten oder Touchscreen-Bedienung erwogen.
+Die Entscheidung fiel auf eine wakeword-basierte Sprachsteuerung, da diese eine niedrigschwellige, freihändige Interaktion ermöglicht.
+Nutzende können Pablo aktivieren und Befehle erteilen, ohne ihre aktuelle Tätigkeit unterbrechen zu müssen.
+Dieser Ansatz unterstützt eine möglichst natürliche Zugangsmöglichkeit zum System und entspricht dem Companion-Konzept, bei dem die Interaktion intuitiv und beiläufig erfolgen soll.
 
+\subsection{Visuelle Persona}
 
-\subsection{Entscheidung für Raspberry-Pi-basierte Hardware}
+Bei der Gestaltung der Benutzeroberfläche wurde zwischen einer rein funktionalen Darstellung, etwa einer textuellen Statusanzeige, und einer visuellen Persona in Form eines animierten Charakters abgewogen.
+Die Entscheidung fiel auf die Darstellung eines Pixel-Art-Faultiers als visuelle Identität von Pablo.
+Diese Gestaltung erzeugt einen hohen Wiedererkennungswert, ermöglicht eine freundlichere und zugänglichere Interaktion und grenzt Pablo bewusst von rein technischen Assistenzsystemen ab.
+Durch zustandsabhängige Animationen kann zudem der aktuelle Systemstatus auf eine intuitive und ansprechende Weise kommuniziert werden.
 
-gute Verfügbarkeit
-geeignet für Prototyping
-Schnittstellenvielfalt
-ausreichend für lokale Koordination der Komponenten
+\subsection{Kompaktes integriertes Display}
 
-
-\subsection{Entscheidung für Wakeword- und Sprachsteuerung}
-
-niedrigschwellige Interaktion
-natürlicher Zugriff
-hands-free Nutzung
-
-
-\subsection{Entscheidung für eine visuelle Persona}
-
-Wiedererkennungswert
-freundlichere Interaktion
-Abgrenzung von rein technischen Assistentensystemen
-
-
-\subsection{Entscheidung für ein kompaktes Display}
-
-lokales Feedback
-Statusanzeige
-Charakterdarstellung von Pablo
+Alternativ zur Integration eines eigenen Displays wäre eine Ausgabe ausschließlich über Sprache oder über ein externes Gerät wie ein Smartphone möglich gewesen.
+Die Entscheidung für ein kompaktes, direkt im Gehäuse verbautes Display wurde getroffen, um Pablo ein lokales visuelles Feedback zu ermöglichen.
+Das Display dient der Darstellung des Avatars, der Anzeige von Statusinformationen und der visuellen Begleitung der Sprachinteraktion.
+Durch die Integration des Displays in das Gehäuse wird Pablo als eigenständiges, in sich geschlossenes Produkt wahrnehmbar, das keine zusätzlichen externen Geräte für die Nutzung benötigt.

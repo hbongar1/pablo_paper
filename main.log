@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 08:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 08:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -689,13 +689,13 @@ Overfull \hbox (15.52231pt too wide) in paragraph at lines 79--87
 \T1/cmr/m/n/10.95 fang-rei-chen Community-Dokumentation ei-ne ge-eig-ne-te Platt-form für ein Embedded-Assistenzsystem
  []
 
-[7]) (./chapters/05_entwicklungsentscheidungen.tex [8]) (./chapters/06_ergebnis_kritischeEinordnung.tex) [9] [10] (./main.aux)
+[7]) (./chapters/05_entwicklungsentscheidungen.tex [8]) (./chapters/06_ergebnis_kritischeEinordnung.tex [9]) [10] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6F540E707F286F787BAC1E0A46576B5F;5055.
+(rerunfilecheck)             Checksum: AD81B4D8BF61A3A40CD004749D9A9592;4534.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -703,13 +703,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  19826 strings out of 467525
  344108 string characters out of 5418982
- 1222116 words of memory out of 5000000
+ 1221116 words of memory out of 5000000
  48439 multiletter control sequences out of 15000+600000
  640996 words of font info for 74 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,6n,79p,735b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (10 pages, 234536 bytes).
+Output written on main.pdf (10 pages, 236877 bytes).
 PDF statistics:
  263 PDF objects out of 1000 (max. 8388607)
  228 compressed objects within 3 object streams
