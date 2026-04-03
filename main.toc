@@ -19,11 +19,11 @@
 \contentsline {subsection}{\numberline {3.2}Hardwarekonzept}{6}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Diskussion der Ergebnisse}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Physischer Companion statt reiner Softwareassistent}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Modular erweiterbare Plugin-Struktur}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Modular erweiterbare Plugin-Struktur}{9}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Raspberry Pi als zentrale Recheneinheit}{9}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Wakeword- und Sprachsteuerung}{9}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Visuelle Persona}{9}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Kompaktes integriertes Display}{9}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.6}Kompaktes integriertes Display}{10}{subsection.4.6}%
 \contentsline {section}{\numberline {5}Praktische Herausforderungen}{10}{section.5}%
 \contentsline {section}{\numberline {6}Ergebnis und kritische Einordnung}{10}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Praktische Herausforderungen}{11}{subsection.6.1}%
