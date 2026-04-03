@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,7 +789,22 @@ Underfull \hbox (badness 2809) in paragraph at lines 75--75
 \T1/cmr/m/n/10 wick-lung tech-ni-scher Pro-duk-te und Sys-te-me --
  []
 
-[7] (./main.aux)
+<grafiken/IMG_1497.png, id=205, 4300.065pt x 5733.42pt>
+File: grafiken/IMG_1497.png Graphic file (type png)
+<use grafiken/IMG_1497.png>
+Package pdftex.def Info: grafiken/IMG_1497.png  used on input line 88.
+(pdftex.def)             Requested size: 198.03186pt x 153.0923pt.
+<grafiken/IMG_1498.png, id=207, 4300.065pt x 5733.42pt>
+File: grafiken/IMG_1498.png Graphic file (type png)
+<use grafiken/IMG_1498.png>
+Package pdftex.def Info: grafiken/IMG_1498.png  used on input line 92.
+(pdftex.def)             Requested size: 198.03186pt x 153.0923pt.
+<grafiken/IMG_1492.png, id=209, 4300.065pt x 5733.42pt>
+File: grafiken/IMG_1492.png Graphic file (type png)
+<use grafiken/IMG_1492.png>
+Package pdftex.def Info: grafiken/IMG_1492.png  used on input line 96.
+(pdftex.def)             Requested size: 198.03186pt x 153.0923pt.
+[7 <./grafiken/IMG_1497.png> <./grafiken/IMG_1498.png> <./grafiken/IMG_1492.png>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -801,18 +816,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19940 strings out of 467525
- 346539 string characters out of 5418982
+ 19961 strings out of 467525
+ 347124 string characters out of 5418982
  1225417 words of memory out of 5000000
- 48538 multiletter control sequences out of 15000+600000
+ 48559 multiletter control sequences out of 15000+600000
  647642 words of font info for 93 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,9n,79p,735b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (9 pages, 15526467 bytes).
+Output written on main.pdf (9 pages, 57670666 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
+ 306 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
  45 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
