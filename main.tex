@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper,twocolumn]{article}
 
 % Encoding and language
 \usepackage[T1]{fontenc}
@@ -7,9 +7,9 @@
 \usepackage{csquotes}
 
 % Layout and style
-\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm,columnsep=0.6cm]{geometry}
 \usepackage{setspace}
-\onehalfspacing
+\setstretch{1.15}
 \usepackage{parskip}
 
 % Math and figures
@@ -31,10 +31,19 @@
 
 \begin{document}
 
+% Deckblatt (ohne Seitenzahl)
+\pagenumbering{gobble}
+\onecolumn
 \maketitle
+\newpage
+
+% Inhaltsverzeichnis (ohne Seitenzahl)
 \tableofcontents
 \newpage
 
+% Inhalt ab hier mit Seitenzahlen ab 1
+\pagenumbering{arabic}
+\twocolumn
 
 \input{kapitel/01_einleitung.tex}
 \input{kapitel/02_entwicklungsprozess.tex}

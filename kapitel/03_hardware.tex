@@ -1,7 +1,5 @@
 \section{Hardware}
 
-\subsection{Methodik}
-
 Die Auswahl der Hardwarekomponenten erfolgte unter Abwägung von Kosten, Kompaktheit, Integrationsfähigkeit und Community-Unterstützung.
 Ziel war es, eine Systemarchitektur zu definieren, die sämtliche Funktionen des Companion-Bots in einem kompakten, eigenständigen Gerät vereint.
 Dabei wurde für jede Teilfunktion, namentlich Recheneinheit, Audioerfassung, visuelle Ausgabe, Audioausgabe und mechanische Ausrichtung, jeweils eine geeignete Komponente identifiziert und deren Integration in das Gesamtsystem geprüft.
@@ -16,12 +14,12 @@ Die Stromversorgung des Verstärkers erfolgt über einen Arduino Uno, der zuglei
 Für die mechanische Ausrichtung des Kopfteils, das aus Display und Gehäuseoberteil besteht, wird ein Servomotor eingesetzt, der über einen Arduino Nano angesteuert und seriell vom Raspberry Pi kontrolliert wird.
 Durch diese Aufteilung der Steuerungsaufgaben auf mehrere Mikrocontroller konnte die Echtzeitfähigkeit der mechanischen und audiovisuellen Komponenten sichergestellt werden, ohne die Hauptrecheneinheit zusätzlich zu belasten.
 
-\begin{figure}[htbp]
+\begin{figure*}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{grafiken/hardware_explosionsansicht.png}
+    \includegraphics[width=0.45\textwidth]{grafiken/hardware_explosionsansicht.png}
     \caption{Explosionsansicht des Hardwareaufbaus von Pablo mit Zuordnung der einzelnen Komponenten.}
     \label{fig:hardware_explosion}
-\end{figure}
+\end{figure*}
 
 Das Gehäuse wurde als 3D-gedruckter Baumstamm gestaltet und nimmt sämtliche Hardwarekomponenten auf.
 Diese Formgebung unterstreicht den Companion-Charakter von Pablo und schafft eine visuelle Abgrenzung gegenüber rein technischen Geräten.
