@@ -1,37 +1,17 @@
 \section{Plugin-Integration}
 
-Im Bereich der Plugin-Integration wurde die Erweiterbarkeit des Systems softwareseitig über eine klar definierte Schnittstelle umgesetzt.
+Die Erweiterbarkeit von Pablo wurde softwareseitig über eine klar definierte Plugin-Schnittstelle umgesetzt. 
 Ziel war es, Pablo nicht auf einen festen Funktionsumfang zu beschränken, sondern zusätzliche Werkzeuge unabhängig vom Kernsystem ergänzen zu können.
 
 \subsection{Ergebnis}
 
-Die Plugins werden beim Start dynamisch aus dem Ordner \texttt{plugins} geladen. 
-Der Loader prüft dabei automatisch alle Python-Module in diesem Verzeichnis und übernimmt nur solche Module, die die beiden notwendigen Bestandteile \texttt{TOOL\_DEF} und \texttt{execute} bereitstellen. 
-Dadurch ist keine zusätzliche Registrierung im Kernsystem erforderlich.
-
-Jedes Plugin ist als eigenständiges Python-Modul aufgebaut und kapselt seine jeweilige Logik intern. 
-Die Struktur \texttt{TOOL\_DEF} beschreibt die für das Sprachmodell relevante Werkzeugschnittstelle mit Name, Beschreibung und Parametern. 
-Die Funktion \texttt{execute(args)} übernimmt die eigentliche Ausführung und erzeugt den Antworttext. 
+Die Plugins werden beim Start dynamisch aus dem Ordner \texttt{plugins} geladen. Berücksichtigt werden nur Module, die die beiden Bestandteile \texttt{TOOL\_DEF} und \texttt{execute} bereitstellen. Eine zusätzliche Registrierung im Kernsystem ist dadurch nicht erforderlich.
+Jedes Plugin ist als eigenständiges Python-Modul aufgebaut. \texttt{TOOL\_DEF} beschreibt die für das Sprachmodell relevante Schnittstelle mit Name, Beschreibung und Parametern, während \texttt{execute(args)} die eigentliche Ausführung übernimmt und den Antworttext erzeugt. 
 Zusätzliche Hilfsfunktionen, etwa für API-Aufrufe oder lokale Dateiverarbeitung, können innerhalb des jeweiligen Moduls ergänzt werden.
-
-Die Integration neuer Plugins erfolgt nach demselben Muster. 
-Hierfür wird im Verzeichnis \texttt{plugins} eine neue Python-Datei mit \texttt{TOOL\_DEF} und \texttt{execute(args)} angelegt. 
-Beim nächsten Systemstart wird das Modul automatisch erkannt, geladen und der LLM-Verarbeitung als aufrufbares Werkzeug bereitgestellt. 
-
-Im Rahmen des Prototyps wurden vier Basis-Plugins implementiert: Das Wetter-Modul ruft externe Wetterdaten über eine Webschnittstelle ab, das Notizen-Modul verwaltet lokale Einträge und spiegelt diese zusätzlich auf einem Miro-Board, das Kalender-Modul legt Termine über die Google-Kalender-API an und über das Timer-Modul können im laufenden Prozess Timer gestartet werden.
+Neue Plugins können nach demselben Muster ergänzt und beim nächsten Systemstart automatisch geladen werden.
+Im Prototyp wurden vier Basis-Plugins umgesetzt: Wetter, Notizen, Kalender und Timer. Damit kann Pablo neben freier Sprachverarbeitung auch konkrete unterstützende Funktionen im Alltag ausführen.
 
 \subsection{Einordnung}
 
-Die Trennung zwischen Basissystem und Plugins ermöglicht es, den Funktionsumfang von Pablo zu erweitern, ohne die zentrale Sprachverarbeitung oder den Hauptablauf des Systems grundlegend verändern zu müssen.
-Im Rahmen der Softwareentwicklung wurde zwischen einer monolithischen Implementierung mit fest eingebundenen Funktionen und einer modularen Plugin-Architektur abgewogen. 
-Eine monolithische Lösung hätte den initialen Entwicklungsaufwand reduziert, jedoch jede funktionale Erweiterung unmittelbar an Änderungen im Kernsystem gebunden. 
-Für Pablo wurde daher eine modulare, API-basierte Struktur gewählt, in der neue Funktionen als eigenständige Module ergänzt werden können. 
-Dies entspricht dem Anspruch, Pablo nicht als statisch festgelegtes System, sondern als anpassbaren und erweiterbaren Companion zu entwickeln.
-
-Die Plugin-Architektur unterstützt damit sowohl die technische Erweiterbarkeit als auch die inhaltliche Offenheit des Systems. 
-Funktionen können an unterschiedliche Nutzungskontexte angepasst und schrittweise ergänzt werden, ohne die bestehende Grundstruktur neu aufbauen zu müssen. 
-Gleichzeitig schafft dieser Aufbau eine geeignete Grundlage für eine spätere Öffnung des Systems im Sinne eines erweiterbaren Open-Source-Ansatzes.
-
-Die im Prototyp umgesetzten Plugins decken bewusst typische Alltagsszenarien ab. 
-Wetterabfragen, Notizen, Kalender und Timer zeigen, dass Pablo nicht auf freie Gesprächsführung beschränkt ist, sondern auch konkrete unterstützende Funktionen im Alltag übernehmen kann. 
-Damit bilden sie einen ersten funktionalen Kern, der sowohl die praktische Nutzbarkeit als auch die Umsetzbarkeit des modularen Erweiterungskonzepts verdeutlicht.
+Die Trennung zwischen Basissystem und Plugins ermöglicht es, den Funktionsumfang von Pablo zu erweitern, ohne die zentrale Sprachverarbeitung oder den Hauptablauf des Systems grundlegend anzupassen. Im Entwicklungsprozess wurde diese modulare Struktur einer monolithischen Implementierung vorgezogen, da neue Funktionen so als eigenständige Module ergänzt werden können.
+Die Plugin-Architektur unterstützt damit den Anspruch, Pablo als anpassbaren und erweiterbaren Companion zu entwickeln. Die im Prototyp umgesetzten Plugins decken typische Alltagsszenarien ab und bilden einen ersten funktionalen Kern, der sowohl die praktische Nutzbarkeit als auch die Umsetzbarkeit des modularen Erweiterungskonzepts verdeutlicht.
