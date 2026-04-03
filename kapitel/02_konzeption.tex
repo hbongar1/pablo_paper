@@ -1,2 +1,36 @@
-das aus 02_entwicklungsprozess.tex stammt, anforderungen
+\section{Konzeption und Anforderungsdefinition}
 
+\subsection{Produktkonzept}
+
+Im Rahmen der Konzeption wurde zunächst die Zielgruppe eingegrenzt.
+Insbesondere Personen im häuslichen oder studentischen Umfeld können von einem kompakten Schreibtischassistenten profitieren, der ohne Smartphone oder Computer bedienbar ist.
+Daraus ergab sich die bewusste Entscheidung, Pablo nicht ausschließlich als funktionalen Assistenten zu konzipieren, sondern als \textit{Companion}, also ein System, das durch seine physische Gestalt, seine visuelle Identität und seine Interaktionsweise eine persönliche Bindung ermöglicht.
+Die Verkörperung als Pixel-Art-Faultier in einem baumstammförmigen Gehäuse unterstreicht diesen Companion-Charakter und schafft eine niedrigschwellige, sympathische Zugangsmöglichkeit.
+
+\subsection{Kernfunktionen}
+
+Auf Grundlage des Produktkonzepts wurden die Kernfunktionen für einen funktionalen Prototyp definiert.
+Diese umfassen eine wakeword-basierte Aktivierung, sprachliche Interaktion über ein Large Language Model, konkrete Alltagsfunktionen wie Notizen, Kalendereinträge, Timer und Wetterabfragen sowie visuelle Rückmeldung über ein integriertes Display.
+Die ausgewählten Funktionen bilden den minimalen Umfang des angestrebten MVP und wurden so gewählt, dass sie den modularen Charakter des Systems demonstrieren.
+
+\subsection{Anforderungen}
+
+Aus dem Produktkonzept und den definierten Kernfunktionen wurden funktionale sowie nicht-funktionale Anforderungen an das System abgeleitet, die als Grundlage für alle weiteren Entwicklungsentscheidungen dienen.
+
+\textbf{Funktionale Anforderungen}
+\begin{itemize}
+    \item Das System muss über ein sprachbasiertes Ein- und Ausgabesystem verfügen, das gesprochene Anfragen erfassen und verarbeitete Antworten als Sprache ausgeben kann.
+    \item Eine Wakeword-Erkennung ist erforderlich, um das System gezielt aktivieren zu können, ohne dass eine dauerhafte Verarbeitung aller Audioeingaben stattfindet.
+    \item Das System muss eine API-basierte Erweiterbarkeit bieten, über die zusätzliche Funktionsmodule integriert werden können.
+    \item Auf dem integrierten Display soll ein visueller Avatar dargestellt werden, der den aktuellen Systemzustand widerspiegelt und die Interaktion durch eine grafische Benutzeroberfläche ergänzt.
+\end{itemize}
+
+\textbf{Nicht-funktionale Anforderungen}
+\begin{itemize}
+    \item Die Bedienung des Systems muss intuitiv gestaltet sein, sodass keine technischen Vorkenntnisse für die Nutzung erforderlich sind.
+    \item Der Systemaufbau soll modular konzipiert werden, um einzelne Komponenten unabhängig voneinander austauschen oder erweitern zu können.
+    \item Die verwendete Hardware muss kompakt dimensioniert sein, damit das Gesamtsystem als Schreibtischgerät eingesetzt werden kann.
+    \item Die Integration der einzelnen Hard- und Softwarekomponenten muss robust umgesetzt werden, um einen zuverlässigen Dauerbetrieb zu gewährleisten.
+    \item Das System soll echtzeitnahe Reaktionszeiten aufweisen, damit die sprachliche Interaktion als natürlich und flüssig wahrgenommen wird.
+    \item Die gesamte Interaktion, einschließlich der sprachlichen Ausgabe, muss verständlich und nachvollziehbar gestaltet sein.
+\end{itemize}
