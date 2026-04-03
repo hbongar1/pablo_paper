@@ -19,3 +19,5 @@
 \contentsline {section}{\numberline {8}Praktische Herausforderungen}{5}{section.8}%
 \contentsline {section}{\numberline {9}Fazit}{6}{section.9}%
 \contentsline {section}{\numberline {10}Ausblick}{6}{section.10}%
+\contentsline {section}{\numberline {A}GitHub-Repository}{7}{appendix.A}%
+\contentsline {section}{\numberline {B}Weitere Bilder}{7}{appendix.B}%
