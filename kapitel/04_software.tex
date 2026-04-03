@@ -38,6 +38,13 @@ Die Sprachausgabe wird lokal mit Piper generiert (deutsches Modell \texttt{de\_D
 Der Text wird in eine WAV-Datei gerendert und über einen System-Audio-Player abgespielt. 
 Vor dem eigentlichen Audiomaterial wird eine führende Stille eingefügt, sodass die visuelle Feedback-Umschaltung mit dem tatsächlichen Audiobeginn zeitlich synchronisiert ist.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.98\textwidth]{grafiken/Hauptschleife.png}
+	\caption{Ablauf der Hauptschleife von Pablo.}
+	\label{fig:hauptschleife}
+\end{figure}
+
 Die einzelnen Phasen sind funktional entkoppelt und über definierte Funktionsaufrufe miteinander verbunden.
 Fehlerfälle werden über Ausnahmebehandlung auf Schleifenebene abgefangen. 
 

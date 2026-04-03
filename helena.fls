@@ -253,6 +253,11 @@ INPUT ./kapitel/04_software.tex
 INPUT kapitel/04_software.tex
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT ./grafiken/Hauptschleife.png
+INPUT ./grafiken/Hauptschleife.png
+INPUT ./grafiken/Hauptschleife.png
+INPUT ./grafiken/Hauptschleife.png
+INPUT ./grafiken/Hauptschleife.png
 INPUT ./kapitel/05_module.tex
 INPUT ./kapitel/05_module.tex
 INPUT kapitel/05_module.tex

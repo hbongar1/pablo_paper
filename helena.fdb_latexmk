@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber helena"] 1775225790.17095 "helena.bcf" "helena.bbl" "helena" 1775225801.54844 0
-  "helena.bcf" 1775225801.33663 107302 2674e7d37e05c676e66e56135346d8a9 "pdflatex"
+["biber helena"] 1775225790.17095 "helena.bcf" "helena.bbl" "helena" 1775226724.78801 0
+  "helena.bcf" 1775226724.56121 107302 2674e7d37e05c676e66e56135346d8a9 "pdflatex"
   (generated)
   "helena.bbl"
   "helena.blg"
   (rewritten before read)
-["pdflatex"] 1775225797.90664 "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/helena.tex" "helena.pdf" "helena" 1775225801.54885 0
+["pdflatex"] 1775226721.24589 "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/helena.tex" "helena.pdf" "helena" 1775226724.7884 0
   "/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/helena.tex" 1775222615.09434 906 fffbf91a2b65d1f9efe6a8ad8644eadc ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -129,18 +129,19 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774955869 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774955747 3636767 1c078392701ce9aa0a4b9e494fdc5804 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
+  "grafiken/Hauptschleife.png" 1775226523.63269 60486 5720a72df3d5f3c6b55d983e325f7210 ""
   "grafiken/IMG_1502.png" 1775223827.04685 10502893 2b44a10d995d602db665b190079688cf ""
   "grafiken/blinking.jpeg" 1775223279.64804 68976 e5a44945149705520fe332bd445db629 ""
   "grafiken/idle_1.jpeg" 1775223279.65885 89693 47ba5783af3555cda69a23550c26419e ""
   "grafiken/speaking_2.jpeg" 1775223279.67582 78095 75632dbf22ebd118b470d578b74d732b ""
   "grafiken/thinking.jpeg" 1775223281.24951 81896 82d3a1139b3299772a8e83ab74533705 ""
-  "helena.aux" 1775225801.3323 2100 2f8888f69c10ae838f609b0a067c6aec "pdflatex"
+  "helena.aux" 1775226724.5568 2331 c44b9eb337c7444660f5e7bf53222127 "pdflatex"
   "helena.bbl" 1775225793.85213 0 d41d8cd98f00b204e9800998ecf8427e "biber helena"
-  "helena.out" 1775225801.33503 1346 c375a5c77f3f13dc7ddac1ea1f08e51b "pdflatex"
-  "helena.run.xml" 1775225801.33779 2365 a08412e5f08c7ac82d9a0a8ec49f1315 "pdflatex"
+  "helena.out" 1775226724.55945 1346 c375a5c77f3f13dc7ddac1ea1f08e51b "pdflatex"
+  "helena.run.xml" 1775226724.56241 2365 a08412e5f08c7ac82d9a0a8ec49f1315 "pdflatex"
   "helena.tex" 1775222615.09434 906 fffbf91a2b65d1f9efe6a8ad8644eadc ""
-  "helena.toc" 1775225801.33793 910 76b336f45cbbbd55c0a7795aefeca489 "pdflatex"
-  "kapitel/04_software.tex" 1775220259.16985 5325 e02adf5455bb7e7c7335e62b57dc494e ""
+  "helena.toc" 1775226724.56258 910 4c47ae17361788a78e9b6f9d86b3fb04 "pdflatex"
+  "kapitel/04_software.tex" 1775226716.98504 5511 2d40c3073f2ff50d5d16fcd1f1ba3025 ""
   "kapitel/05_module.tex" 1775222560.95158 3656 356cccbc7c3fdbb053feb1078a71de2e ""
   "kapitel/06_benutzererlebnis.tex" 1775225793.20278 2477 009ed2d5443db7df366dc7f73bd6e139 ""
   "kapitel/07_herausforderungen.tex" 1775222228.77726 2119 5c70238b7d866392345b0fdbd66e7666 ""
