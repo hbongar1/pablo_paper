@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1775211721.2227 "main.bcf" "main.bbl" "main" 1775214072.36554 0
-  "main.bcf" 1775214072.2795 108228 a779700c713d6f366daab4abd626e2bf "pdflatex"
+["biber main"] 1775214141.06843 "main.bcf" "main.bbl" "main" 1775214144.2941 0
+  "main.bcf" 1775214144.19944 108228 a779700c713d6f366daab4abd626e2bf "pdflatex"
   "references.bib" 1775196186.04218 3137 700d4aa856fef17b4c956f9d0afa8e17 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775214071.45744 "/Users/Elias/Documents/GitHub/pablo_paper/main.tex" "main.pdf" "main" 1775214072.3658 0
+["pdflatex"] 1775214143.30226 "/Users/Elias/Documents/GitHub/pablo_paper/main.tex" "main.pdf" "main" 1775214144.29436 0
   "/Users/Elias/Documents/GitHub/pablo_paper/main.tex" 1775214040.52653 1028 12835740342c7c903de1864157e8d7e8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -134,17 +134,17 @@
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774955446 3636775 65cd20d55fd4336ae62f388150f661bc ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
   "chapters/01_einleitung.tex" 1775192443.82453 3482 7316ab4e0b1ba95c39ad0994a1079c6b ""
-  "chapters/02_entwicklungsprozess.tex" 1775211872.70872 5306 73f56f25468a3ec847d640cc54364344 ""
+  "chapters/02_entwicklungsprozess.tex" 1775214140.89501 5296 eb034d6b6844a2bfce88ad3b1e145d4f ""
   "chapters/03_ergebnisse.tex" 1775214069.99853 7226 7f9d92e441a4454f9db391752abb02ec ""
-  "chapters/04_entwicklungsentscheidungen.tex" 1775214040.51886 8717 70e9c86a52ec8291be38154082a74c3f ""
+  "chapters/04_entwicklungsentscheidungen.tex" 1775214140.89542 8740 256fc0a4bc81aaf8df64889b4d507bbf ""
   "chapters/05_kritische_Einordnung.tex" 1775214040.51916 2063 6ac9261a1c5f3ee1101be6f9e0fa2af2 ""
   "chapters/06_fazit_ausblick.tex" 1775214040.51945 5384 d2eb268542197475238d72bfd329bfef ""
-  "main.aux" 1775214072.27614 5145 18eff219c581b671927886bf72a04650 "pdflatex"
-  "main.bbl" 1775196426.76441 13917 ff7725ee447dae3bbf1b3a9e7ca7e482 "biber main"
-  "main.out" 1775214072.27852 4470 ce9f896a19d2b51664e5e9c5b4dbfc19 "pdflatex"
-  "main.run.xml" 1775214072.28008 2432 49ce9cc1c2e214794d05d7a5a4d87ddd "pdflatex"
+  "main.aux" 1775214144.19681 5145 18eff219c581b671927886bf72a04650 "pdflatex"
+  "main.bbl" 1775214143.27574 13917 ff7725ee447dae3bbf1b3a9e7ca7e482 "biber main"
+  "main.out" 1775214144.19845 4470 ce9f896a19d2b51664e5e9c5b4dbfc19 "pdflatex"
+  "main.run.xml" 1775214144.20013 2432 49ce9cc1c2e214794d05d7a5a4d87ddd "pdflatex"
   "main.tex" 1775214040.52653 1028 12835740342c7c903de1864157e8d7e8 ""
-  "main.toc" 1775214072.28015 2632 c0b393bddcac5015ae404362001cc003 "pdflatex"
+  "main.toc" 1775214144.2002 2632 c0b393bddcac5015ae404362001cc003 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
