@@ -1,5 +1,67 @@
+\section{Darstellung der Ergebnisse}
+
+
+\subsection{Produktbeschreibung}
+
+Pablo ist ein kompakter Desk-Companion-Bot, der als physisch präsentes Assistenzsystem für den Einsatz im direkten Umfeld von Nutzenden entwickelt wurde. Das System vereint sprachliche, visuelle und funktionale Elemente in einem gemeinsamen Produkt. Ziel des entwickelten Systems ist es, spontane Aufgaben, Fragen und Erinnerungen entgegenzunehmen und in natürlicher Form zu verarbeiten.
+
+Die Interaktion mit dem System erfolgt primär sprachbasiert. Nutzende können Anfragen und Befehle direkt formulieren, ohne auf klassische Eingabemedien wie Tastatur, Maus oder Smartphone angewiesen zu sein. Ergänzt wird die sprachliche Interaktion durch visuelle Rückmeldungen auf einem integrierten Display. Dadurch entsteht ein System, das Assistenzfunktionen mit einer sichtbaren und räumlich präsenten Benutzeroberfläche kombiniert.
+
+Pablo ist modular aufgebaut. Die entwickelte Architektur ermöglicht die Integration zusätzlicher Funktionen über externe Module. Dadurch kann das System hinsichtlich seines Funktionsumfangs erweitert und an unterschiedliche Nutzungskontexte angepasst werden.
+
+\subsection{Kernfunktionen}
+
+Die Aktivierung des Systems erfolgt wakeword-basiert. Im Bereitschaftszustand wartet Pablo auf ein definiertes Aktivierungswort. Nach der Erkennung des Wakewords wird die Richtung der detektierten Stimme bestimmt und die Anzeigeeinheit entsprechend ausgerichtet. Die anschließende Interaktion erfolgt sprachlich.
+
+Eine zentrale Funktion des Systems ist die Beantwortung allgemeiner Fragen mithilfe eines Large Language Models. Zusätzlich wurden konkrete Funktionsaufrufe für ausgewählte Anwendungsfälle implementiert. Dazu zählen das Erstellen und Verwalten von Notizen, das Erstellen von Kalendereinträgen, das Setzen von Timern sowie die Abfrage aktueller Wetterdaten. Diese Funktionen sind als einzelne Module in das System eingebunden.
+
+Damit verfügt Pablo über eine Kombination aus freier sprachlicher Interaktion und strukturierten Funktionsaufrufen. Die Kernfunktionen bilden die funktionale Grundlage des entwickelten Produkts.
+
+\subsection{Softwarearchitektur}
+
+Die Softwarearchitektur von Pablo basiert auf einer modularen, ereignisgesteuerten Python-Struktur. Dabei sind Ein- und Ausgabe, Dialogverarbeitung sowie Hardwaresteuerung funktional voneinander getrennt.
+
+Beim Systemstart werden die Konfiguration, die verfügbaren Plugin-Module sowie die visuelle Darstellung initialisiert. Anschließend wird der Wakeword- und Richtungsdetektor gestartet. Die aus der Audioanalyse bestimmte Schallrichtung wird an die Servosteuerung übergeben, sodass sich die Anzeigeeinheit in Richtung der sprechenden Person ausrichten kann.
+
+Die Hauptverarbeitung gliedert sich in vier logisch getrennte Phasen:
+\begin{enumerate}
+    \item akustische Aktivierung, Richtungsschätzung der Stimme und Anpassung der Servoposition,
+    \item Spracherkennung mittels Speech-to-Text,
+    \item inhaltliche Verarbeitung über ein Large Language Model mit optionaler Modulausführung,
+    \item Sprachausgabe mittels Text-to-Speech.
+\end{enumerate}
+
+Die einzelnen Phasen sind über definierte Funktionsaufrufe miteinander verbunden. Externe Funktionen werden über eine Plugin-Schnittstelle dynamisch geladen und dem Sprachmodell als verfügbare Werkzeuge bereitgestellt. Dadurch kann das System zwischen direkter Antwortgenerierung und dem Aufruf spezialisierter Funktionen unterscheiden.
+
+Für zeitkritische Teilaufgaben werden parallele Prozesse genutzt. Die Servosteuerung erfolgt asynchron in einem separaten Thread. Zusätzlich wird die Zustandsänderung der Visualisierung während der Sprachausgabe threadbasiert umgesetzt. Fehlerfälle werden über eine Ausnahmebehandlung innerhalb der Hauptschleife abgefangen.
+
+\subsubsection{Aktivierung des Systems}
+
+Die Aktivierung erfolgt über eine Wakeword-Erkennung mit Picovoice Porcupine. Nach dem Erkennen des Aktivierungsworts wird die Richtung der Schallquelle aus einem Stereo-Audiofenster bestimmt und an die Servosteuerung weitergegeben. Wakeword-Erkennung und Richtungsanalyse sind in einem gemeinsamen Detector-Modul zusammengefasst.
+
+\subsubsection{Spracherkennung}
+
+Die Spracherkennung basiert auf Vosk und verarbeitet den Audiostrom über \texttt{sounddevice}. Das System testet beim Start mehrere Mikrofon- und Samplerate-Kombinationen. Sobald ein vollständiger Sprachabschnitt erkannt wurde, wird der Text an die Dialogverarbeitung übergeben.
+
+\subsubsection{LLM-Verarbeitung}
+
+Die inhaltliche Verarbeitung erfolgt über eine OpenAI-kompatible API in \texttt{llm.py}. Der Nutzereingabe werden dabei die geladenen Plugin-Module als Tools bereitgestellt. Abhängig von der Anfrage erzeugt das Modell entweder eine direkte Antwort oder veranlasst den Aufruf einer Funktion. Die konkrete Logik für Wetter, Notizen, Kalender und Timer ist in separaten Plugins gekapselt.
+
+\subsubsection{Sprachausgabe}
+
+Die Sprachausgabe wird lokal mit Piper erzeugt. Aus dem Antworttext wird zunächst eine WAV-Datei erstellt, die anschließend über einen verfügbaren Audio-Player wiedergegeben wird. Vor dem Abspielen wird eine kurze Vorlaufzeit verwendet, um die visuelle Rückmeldung mit der Sprachausgabe zu synchronisieren.
+
+\subsection{Hardwarekonzept}
+
+Als zentrale Recheneinheit wird ein Raspberry Pi eingesetzt. Die Audioerfassung erfolgt über einen ReSpeaker 2-Mics Pi HAT. Für die visuelle Ausgabe wird ein Waveshare 4-Zoll-IPS-Display verwendet. Die Audioausgabe erfolgt über einen 5\,W / 8\,$\Omega$-Lautsprecher mit separatem Audioverstärker.
+
+Für die mechanische Ausrichtung des Kopfteils, bestehend aus Display und Gehäuseoberteil, wird ein Servomotor eingesetzt. Dieser wird über einen Arduino Nano angesteuert und seriell vom Raspberry Pi kontrolliert. Die Stromversorgung des Verstärkers erfolgt über einen Arduino Uno.
+
+Das Gehäuse wurde als 3D-gedruckter Baumstamm ausgeführt und integriert sämtliche Hardwarekomponenten. Das Display bildet den sichtbaren Kopfbereich des Systems und dient gleichzeitig als visuelle Benutzerschnittstelle.
+
 \section{Produktbeschreibung}
-\label{sec:systemkonzept}
+
+
 
 Pablo ist ein kompakter Desk-Companion-Bot, der zur Unterstützung von Nutzenden im Alltag entwickelt wurde. 
 Das Produkt wurde als physisch präsentes Assistenzsystem konzipiert, das im direkten Umfeld der Nutzenden eingesetzt werden kann und eine niedrigschwellige Interaktion ermöglicht. 
@@ -19,8 +81,28 @@ Dadurch ist Pablo nicht ausschließlich für ein einzelnes Einsatzszenario ausge
 Diese Offenheit und Erweiterbarkeit stellt ein zentrales Unterscheidungsmerkmal gegenüber geschlossenen Sprachassistenzsystemen dar, deren Funktionsumfang und Erscheinungsbild in der Regel nur eingeschränkt angepasst werden können.
 
 
+
 \subsection{Kernfunktionen}
-Die Kernfunktionen von Pablo orientieren sich an typischen Anforderungen des Alltags und bilden die Grundlage für einen funktionalen Prototyp. 
+Die Kernfunktionen von Pablo wurden aus vorher definierten funktionalen Anforderungen an das System abgeleitet. 
+
+\subsubsection{Funktionale Anforderungen}
+
+Das System muss über ein sprachbasiertes Ein- und Ausgabesystem verfügen, das gesprochene Anfragen erfassen und verarbeitete Antworten als Sprache ausgeben kann.
+Eine Wakeword-Erkennung ist erforderlich, um das System gezielt aktivieren zu können, ohne dass eine dauerhafte Verarbeitung aller Audioeingaben stattfindet.
+Darüber hinaus muss das System eine API-basierte Erweiterbarkeit bieten, über die zusätzliche Funktionsmodule in das bestehende System integriert werden können.
+Auf dem integrierten Display soll ein visueller Avatar dargestellt werden, der den aktuellen Systemzustand widerspiegelt und die Interaktion durch eine grafische Benutzeroberfläche ergänzt.
+
+\subsubsection{Nicht-funktionale Anforderungen}
+
+Die Bedienung des Systems muss intuitiv gestaltet sein, sodass keine technischen Vorkenntnisse für die Nutzung erforderlich sind.
+Der Systemaufbau soll modular konzipiert werden, um einzelne Komponenten unabhängig voneinander austauschen oder erweitern zu können.
+Die verwendete Hardware muss kompakt dimensioniert sein, damit das Gesamtsystem als Schreibtischgerät eingesetzt werden kann.
+Die Integration der einzelnen Hard- und Softwarekomponenten muss robust umgesetzt werden, um einen zuverlässigen Dauerbetrieb zu gewährleisten.
+Das System soll echtzeitnahe Reaktionszeiten aufweisen, damit die sprachliche Interaktion als natürlich und flüssig wahrgenommen wird.
+Die gesamte Interaktion, einschließlich der sprachlichen Ausgabe, muss verständlich und nachvollziehbar gestaltet sein.
+
+
+
 
 Die Aktivierung des Systems erfolgt wakeword-basiert. 
 Dadurch verbleibt Pablo im Bereitschaftszustand, bis eine definierte sprachliche Aktivierung erkannt wird. 
@@ -35,6 +117,7 @@ Dazu zählen das Erstellen und Verwalten von Notizen, Erstellen von Kalendereint
 Diese Funktionen sind so gewählt, dass sie einen unmittelbaren praktischen Nutzen im täglichen Gebrauch bieten und gleichzeitig die modulare Erweiterbarkeit des Systems demonstrieren. 
 
 Insgesamt bilden diese Kernfunktionen die technische und konzeptionelle Basis des Produkts und schaffen eine Grundlage für weitere Entwicklung.
+
 
 
 \subsection{Softwarearchitektur}
@@ -62,20 +145,33 @@ Fehlerfälle werden über Ausnahmebehandlung auf Schleifenebene abgefangen.
 
 \subsubsection{(1) Aktivierung des Systems}
 
+Die Aktivierung erfolgt über eine Wakeword-Erkennung mit Picovoice Porcupine. 
+Nach dem Erkennen des Aktivierungsworts wird zusätzlich die Schallrichtung aus einem Stereo-Audiofenster bestimmt und an die Servosteuerung übergeben. 
+Die Umsetzung ist in einem gemeinsamen Detector-Modul gekapselt, das Wakeword-Erkennung und Richtungsanalyse zusammenführt.
+
 
 \subsubsection{(2) Spracherkennung (STT)}
+
+Die Spracherkennung basiert auf Vosk und liest den Audiostrom über sounddevice ein. 
+Das System prüft dabei mehrere Mikrofon- und Samplerate-Kombinationen, um auch auf unterschiedlicher Hardware zuverlässig zu starten. 
+Erst wenn ein vollständiger Satz erkannt wurde, wird der erkannte Text an die Dialogverarbeitung weitergegeben.
 
 
 \subsubsection{(3) LLM-Verarbeitung}
 
+Die inhaltliche Verarbeitung erfolgt über eine OpenAI-kompatible API in llm.py. 
+Dort werden der Nutzereingabe dynamisch die über den Loader geladenen Plugin-Module als Tools bereitgestellt, sodass das Modell je nach Anfrage entweder direkt antwortet oder eine Funktion ausführt. 
+Die Plugins kapseln dabei die konkrete Logik für Wetter, Notizen, Kalender und Timer.
+
 
 \subsubsection{(4) Sprachausgabe (TTS)}
 
+Die Sprachausgabe wird lokal mit Piper erzeugt. 
+Dazu wird aus dem Antworttext zunächst eine WAV-Datei generiert und anschließend über einen verfügbaren Audio-Player wie paplay oder aplay wiedergegeben. 
+Eine kurze Vorlaufzeit vor dem Abspielen sorgt dafür, dass das visuelle Feedback zeitlich passend zur Sprachausgabe umschaltet.
 
 
-\subsection{Hardwareaufbau}
-\label{sec:hardware}
-
+\subsection{Hardwarekonzept}
 Die Auswahl der Hardwarekomponenten erfolgte unter Abwägung von Kosten, Kompaktheit, Integrationsfähigkeit und Community-Unterstützung.
 Als zentrale Recheneinheit wurde ein Raspberry Pi gewählt, der aufgrund seiner kompakten Bauform, breiten Softwarekompatibilität und umfangreichen Community-Dokumentation eine geeignete Plattform für ein Embedded-Assistenzsystem darstellt.
 Für die Audioerfassung wurde der ReSpeaker 2-Mics Pi HAT eingesetzt, der neben der Sprachaufnahme auch eine richtungsbasierte Schallquellenortung ermöglicht.

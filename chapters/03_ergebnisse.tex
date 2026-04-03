@@ -1,0 +1,92 @@
+\section{Darstellung der Ergebnisse}
+
+Im folgenden Abschnitt wird die Umsetzung des entwickelten Prototyps beschrieben. 
+Dabei werden zunächst die funktionalen und nicht-funktionalen Anforderungen dargestellt und danach die darauf basierende Softwarearchitektur sowie das Hardwarekonzept beschrieben. 
+
+\subsubsection{Funktionale Anforderungen}
+
+Das System muss über ein sprachbasiertes Ein- und Ausgabesystem verfügen, das gesprochene Anfragen erfassen und verarbeitete Antworten als Sprache ausgeben kann.
+
+Eine Wakeword-Erkennung ist erforderlich, um das System gezielt aktivieren zu können, ohne dass eine dauerhafte Verarbeitung aller Audioeingaben stattfindet.
+
+Darüber hinaus muss das System eine Erweiterbarkeit bieten, über die zusätzliche Funktionsmodule in das bestehende System integriert werden können.
+
+Auf dem integrierten Display soll ein visueller Avatar dargestellt werden, der den aktuellen Systemzustand widerspiegelt und die Interaktion durch eine grafische Benutzeroberfläche ergänzt.
+
+\subsubsection{Nicht-funktionale Anforderungen}
+
+Die Bedienung des Systems muss intuitiv gestaltet sein, sodass keine technischen Vorkenntnisse für die Nutzung erforderlich sind.
+
+Die verwendete Hardware muss kompakt dimensioniert sein, damit das Gesamtsystem als Schreibtischgerät eingesetzt werden kann.
+
+Die Integration der einzelnen Hard- und Softwarekomponenten muss robust umgesetzt werden, um einen zuverlässigen Dauerbetrieb zu gewährleisten.
+
+Das System soll echtzeitnahe Reaktionszeiten aufweisen, damit die sprachliche Interaktion als natürlich und flüssig wahrgenommen wird.
+
+Die gesamte Interaktion, einschließlich der sprachlichen Ausgabe, muss verständlich und nachvollziehbar gestaltet sein.
+
+
+\subsection{Softwarearchitektur}
+
+Die Softwarearchitektur von Pablo basiert auf einer modularen, ereignisgesteuerten Python-Struktur mit Trennung zwischen Ein- und Ausgabe, Dialogverarbeitung sowie Hardwaresteuerung. 
+Beim Start werden zunächst die Systemkonfiguration, die verfügbaren Plugin-Module und die visuelle Prozessdarstellung initialisiert. 
+Anschließend wird der Wakeword- und Richtungsdetektor konfiguriert, der als Trigger-Komponente für die Interaktionsschleife fungiert.
+Die aus der Wakeword-Analyse abgeleitete Schallrichtung wird unmittelbar auf die Servosteuerung übertragen, sodass sich der Bildschirm in Richtung der sprechenden Person ausrichtet.
+
+Das System arbeitet mit einer Hauptschleife mit vier logisch getrennten Verarbeitungsphasen: 
+(1) akustische Aktivierung, Richtungsschätzung der Stimme und Anpassung der Servoposition, 
+(2) Spracherkennung mit Speech-to-Text (STT), 
+(3) inhaltliche Verarbeitung über ein Large Language Model (LLM) mit optionaler Modulausführung und
+(4) Sprachausgabe mit Text-to-Speech (TTS). 
+Die einzelnen Phasen sind funktional entkoppelt und über definierte Funktionsaufrufe miteinander verbunden, wodurch die Austauschbarkeit einzelner Komponenten (z. B. STT- oder TTS-Backend) gewährleistet wird.
+
+Ein zentrales Architekturelement ist die Plugin-Schnittstelle. Über den Loader werden externe Funktionsmodule dynamisch eingebunden und dem LLM-Kontext bereitgestellt. 
+Durch den bereitgestellten Kontext kann das System zwischen generischer Antwortgenerierung und Modulausführung unterscheiden. 
+Dies ermöglicht eine Erweiterung des Basissystem, ohne dass der Kernprozess verändert werden muss.
+
+Parallelität wird gezielt für zeitkritische Teilaufgaben genutzt. 
+Die Servosteuerung erfolgt asynchron in einem separaten Thread, sodass die Audioverarbeitung nicht blockiert wird. 
+Zusätzlich wird die Zustandsumschaltung der Visualisierung während der Sprachausgabe zeitversetzt und threadbasiert umgesetzt, um eine konsistente Synchronisation zwischen auditivem und visuellem Feedback zu erreichen. 
+Fehlerfälle werden über Ausnahmebehandlung auf Schleifenebene abgefangen. 
+
+\subsubsection{(1) Aktivierung des Systems}
+
+Die Aktivierung erfolgt über eine Wakeword-Erkennung mit Picovoice Porcupine. 
+Beim Erkennen des Wakewords wird zeitgleich die Schallrichtung aus einem gepufferten Stereo-Audiofenster mittels GCC-PHAT-Korrelation der beiden Mikrofonkanäle bestimmt und zur Servo-Ausrichtung genutzt. 
+Die Umsetzung erfolgt in einem integrierten Detector-Modul, das beide Aufgaben zusammenführt.
+
+
+\subsubsection{(2) Spracherkennung (STT)}
+
+Die Spracherkennung erfolgt mit dem Vosk-Framework. 
+Der Audiostrom wird verarbeitet, bis das Vosk-Modell einen vollständigen Satz erkannt hat. 
+Erst dann wird der Text an die Dialogverarbeitung übergeben.
+
+
+\subsubsection{(3) LLM-Verarbeitung}
+
+Die inhaltliche Verarbeitung nutzt eine API für den Zugriff auf ein Large-Language-Model (Llama 3.3 70B). 
+Der erkannte Nutzereingabe-Text wird zusammen mit den vom Plugin-Loader geladenen Tool-Definitionen an das Modell übergeben. 
+Das Modell entscheidet selbstständig (via \texttt{tool\_choice="auto"}), ob ein direkter Chat-Response ausreicht oder ob ein registriertes Plugin-Tool aufgerufen werden soll. 
+Die Plugins kapseln die Logik für Wetter, Notizen, Kalender und Timer.
+
+
+\subsubsection{(4) Sprachausgabe (TTS)}
+
+Die Sprachausgabe wird lokal mit Piper generiert (deutsches Modell \texttt{de\_DE-thorsten-low.onnx}). 
+Der Text wird in eine WAV-Datei gerendert und über einen verfügbaren System-Audio-Player (\texttt{paplay} oder \texttt{aplay}) abgespielt. 
+Vor dem eigentlichen Audiomaterial wird eine führende Stille eingefügt, sodass die visuelle Feedback-Umschaltung mit dem tatsächlichen Audiobeginn zeitlich synchronisiert ist.
+
+
+\subsection{Hardwarekonzept}
+Die Auswahl der Hardwarekomponenten erfolgte unter Abwägung von Kosten, Kompaktheit, Integrationsfähigkeit und Community-Unterstützung.
+Als zentrale Recheneinheit wurde ein Raspberry Pi gewählt, der aufgrund seiner kompakten Bauform, breiten Softwarekompatibilität und umfangreichen Community-Dokumentation eine geeignete Plattform für ein Embedded-Assistenzsystem darstellt.
+Für die Audioerfassung wurde der ReSpeaker 2-Mics Pi HAT eingesetzt, der neben der Sprachaufnahme auch eine richtungsbasierte Schallquellenortung ermöglicht.
+Die visuelle Ausgabe erfolgt über ein Waveshare 4-Zoll-IPS-Display, das direkt am Raspberry Pi betrieben wird.
+Als Audioausgabe dient ein 5\,W / 8\,$\Omega$-Lautsprecher, der über einen separaten Audioverstärker angesteuert wird.
+Die Stromversorgung des Verstärkers erfolgt über einen Arduino Uno, der zugleich als dedizierte Steuereinheit für die Energieversorgung der Audiokomponente fungiert.
+Für die mechanische Ausrichtung des Kopfteils, das aus Display und Gehäuseoberteil besteht, wird ein Servomotor eingesetzt, der über einen Arduino Nano angesteuert und seriell vom Raspberry Pi kontrolliert wird.
+Durch diese Aufteilung der Steuerungsaufgaben auf mehrere Mikrocontroller konnte die Echtzeitfähigkeit der mechanischen und audiovisuellen Komponenten sichergestellt werden, ohne die Hauptrecheneinheit zusätzlich zu belasten.
+
+Das Gehäuse wurde als 3D-gedruckter Baumstamm gestaltet und nimmt sämtliche Hardwarekomponenten auf.
+Diese Formgebung unterstreicht den Companion-Charakter von Pablo und schafft eine visuelle Abgrenzung gegenüber rein technischen Geräten.

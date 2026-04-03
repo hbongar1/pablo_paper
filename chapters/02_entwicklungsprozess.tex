@@ -53,20 +53,3 @@ Das Gehäuse wurde als 3D-gedruckter Baumstamm gestaltet, in dem sämtliche Hard
 Auf dem Display wird Pablo als animiertes Pixel-Art-Faultier dargestellt, das je nach Systemzustand unterschiedliche visuelle Zustände zeigt.
 Darüber hinaus wurde die Interaktion hinsichtlich Antwortzeiten, Sprachausgabequalität und visueller Synchronisation optimiert.
 
-
-\subsection{Praktische Herausforderungen}
-
-Im Verlauf der Entwicklung traten mehrere technische Herausforderungen auf, die exemplarisch für die Komplexität eingebetteter Systeme mit heterogener Hardware- und Softwarelandschaft stehen.
-
-Ein wiederkehrendes Problem betraf den automatischen Systemstart nach dem Booten des Raspberry~Pi.
-Da mehrere Dienste, namentlich die grafische Benutzeroberfläche, der Audiotreiber und der Pablo-Service, beim Hochfahren parallel initialisiert werden, kam es zu Timing-Konflikten.
-Insbesondere die Audioeingabe über den ReSpeaker-HAT war nach dem Systemstart nicht immer zuverlässig verfügbar, da der entsprechende ALSA-Treiber erst nach einer systemabhängigen Verzögerung vollständig geladen wurde.
-Diese Problematik wurde durch eine gezielte Startverzögerung und eine Prüfschleife auf Verfügbarkeit der Audioquelle adressiert.
-
-Eine weitere Herausforderung lag in der Integration der unterschiedlichen Hard- und Softwarekomponenten auf der begrenzten Embedded-Plattform.
-Die Kombination aus Raspberry~Pi, zwei Arduino-Mikrocontrollern, dem Mikrofon-HAT, Display und Audioverstärker erforderte eine sorgfältige Abstimmung der seriellen Kommunikation, der Stromversorgung und der GPIO-Belegung.
-Fehler in der Verkabelung oder Timing-Abweichungen in der seriellen Kommunikation mit den Arduinos führten wiederholt zu schwer reproduzierbaren Fehlerbildern, die nur durch systematisches Testen und schrittweise Integration gelöst werden konnten.
-
-Schließlich stellte die Balance zwischen technischer Funktionalität und einem angenehmen Nutzungserlebnis eine übergreifende Herausforderung dar.
-So war die reine Funktionsfähigkeit der Sprachpipeline zwar vergleichsweise früh erreicht, die wahrgenommene Qualität der Interaktion wurde jedoch maßgeblich durch Faktoren wie Antwortlatenz, Sprachausgabequalität und die Synchronisation zwischen visueller Darstellung und Audiowiedergabe beeinflusst.
-Die Optimierung dieser Aspekte erforderte iteratives Anpassen und Testen über mehrere Entwicklungszyklen hinweg.

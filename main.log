@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 08:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/Elias/Documents/GitHub/pablo_paper/main.tex
-(/Users/Elias/Documents/GitHub/pablo_paper/main.tex
+**/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex
+(/Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -664,55 +664,68 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./chapters/01_einleitung.tex) (./chapters/02_produktbeschreibung_anforderungen.tex [2]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 5.
-
-) (./chapters/03_entwicklungsprozess.tex
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./chapters/01_einleitung.tex) (./chapters/02_entwicklungsprozess.tex
 Overfull \hbox (0.74438pt too wide) in paragraph at lines 3--7
 \T1/cmr/m/n/10.95 Die Ent-wick-lung von Pa-blo folg-te ei-nem ite-ra-ti-ven Vor-ge-hen, das sich me-tho-disch an der VDI 2221
  []
+
+[2]
+
+LaTeX Warning: Reference `sec:systemkonzept' on page 3 undefined on input line 36.
 
 [3]
 Overfull \hbox (0.88583pt too wide) in paragraph at lines 45--49
  []\T1/cmr/bx/n/10.95 Phase 4: In-te-gra-ti-on von Funk-ti-ons-mo-du-len.[] \T1/cmr/m/n/10.95 Auf-bau-end auf der funk-tio-nie-ren-den Sprach-
  []
 
-[4]) (./chapters/04_systemkonzept.tex [5] [6]
-Overfull \hbox (6.25319pt too wide) in paragraph at lines 79--87
+) (./chapters/03_ergebnisse.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+[4]
+Overfull \hbox (0.12321pt too wide) in paragraph at lines 20--21
+[]\T1/cmr/m/n/10.95 Die ver-wen-de-te Hard-wa-re muss kom-pakt di-men-sio-niert sein, da-mit das Ge-samt-sys-tem als Schreib-
+ []
+
+[5]
+Overfull \hbox (6.25319pt too wide) in paragraph at lines 82--90
 \T1/cmr/m/n/10.95 te-gra-ti-ons-fä-hig-keit und Community-Unterstützung. Als zen-tra-le Re-chen-ein-heit wur-de ein Raspber-
  []
 
 
-Overfull \hbox (15.52231pt too wide) in paragraph at lines 79--87
+Overfull \hbox (15.52231pt too wide) in paragraph at lines 82--90
 \T1/cmr/m/n/10.95 fang-rei-chen Community-Dokumentation ei-ne ge-eig-ne-te Platt-form für ein Embedded-Assistenzsystem
  []
 
-[7]) (./chapters/05_entwicklungsentscheidungen.tex [8]) (./chapters/06_ergebnis_kritischeEinordnung.tex [9]) [10] (./main.aux)
+[6]) (./chapters/05_entwicklungsentscheidungen.tex [7] [8]) (./chapters/06_ergebnis_kritischeEinordnung.tex [9] [10]) [11] [12] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AD81B4D8BF61A3A40CD004749D9A9592;4534.
+(rerunfilecheck)             Checksum: 1238AF4555113F4A81757CF2E5C5691E;4283.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19826 strings out of 467525
- 344108 string characters out of 5418982
- 1221116 words of memory out of 5000000
- 48439 multiletter control sequences out of 15000+600000
+ 19825 strings out of 467525
+ 343901 string characters out of 5418982
+ 1221030 words of memory out of 5000000
+ 48440 multiletter control sequences out of 15000+600000
  640996 words of font info for 74 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,6n,79p,735b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,6n,79p,803b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (10 pages, 236877 bytes).
+Output written on main.pdf (12 pages, 241948 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
