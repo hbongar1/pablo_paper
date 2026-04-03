@@ -1,17 +1,19 @@
 
 \section{Praktische Herausforderungen}
 
-Im Verlauf der Entwicklung traten mehrere technische Herausforderungen auf, die exemplarisch für die Komplexität eingebetteter Systeme mit heterogener Hardware- und Softwarelandschaft stehen.
+Im Verlauf der Entwicklung traten mehrere technische Herausforderungen auf, die die Komplexität eingebetteter Systeme mit heterogener Hard- und Software verdeutlichen.
 
-Ein wiederkehrendes Problem betraf den automatischen Systemstart nach dem Booten des Raspberry~Pi.
-Da mehrere Dienste, namentlich die grafische Benutzeroberfläche, der Audiotreiber und der Pablo-Service, beim Hochfahren parallel initialisiert werden, kam es zu Timing-Konflikten.
-Insbesondere die Audioeingabe über den ReSpeaker-HAT war nach dem Systemstart nicht immer zuverlässig verfügbar, da der entsprechende ALSA-Treiber erst nach einer systemabhängigen Verzögerung vollständig geladen wurde.
-Diese Problematik wurde durch eine gezielte Startverzögerung und eine Prüfschleife auf Verfügbarkeit der Audioquelle adressiert.
+Ein wiederkehrendes Problem zeigte sich beim automatischen Systemstart nach dem Bootvorgang des Raspberry~Pi. 
+Da die grafische Benutzeroberfläche, Audiotreiber und der Pablo-Dienst parallel initialisiert werden, kam es zu zeitlichen Abhängigkeiten zwischen den einzelnen Komponenten. 
+Insbesondere die Audioeingabe über den ReSpeaker-HAT stand nach dem Hochfahren nicht in jedem Fall unmittelbar zuverlässig zur Verfügung, da der zugrunde liegende ALSA-Treiber erst nach einer systemabhängigen Verzögerung vollständig geladen war. 
+Zur Verbesserung der Startstabilität wurden deshalb eine gezielte Startverzögerung sowie eine Prüfschleife zur Verfügbarkeitskontrolle der Audioquelle umgesetzt.
 
-Eine weitere Herausforderung lag in der Integration der unterschiedlichen Hard- und Softwarekomponenten auf der begrenzten Embedded-Plattform.
-Die Kombination aus Raspberry~Pi, zwei Arduino-Mikrocontrollern, dem Mikrofon-HAT, Display und Audioverstärker erforderte eine sorgfältige Abstimmung der seriellen Kommunikation, der Stromversorgung und der GPIO-Belegung.
-Fehler in der Verkabelung oder Timing-Abweichungen in der seriellen Kommunikation mit den Arduinos führten wiederholt zu schwer reproduzierbaren Fehlerbildern, die nur durch systematisches Testen und schrittweise Integration gelöst werden konnten.
+Eine weitere Herausforderung bestand in der Integration der verschiedenen Hard- und Softwarekomponenten auf der begrenzten Plattform. 
+Die Kombination aus Raspberry~Pi, Arduino-Mikrocontrollern, Mikrofon-HAT, Display und Audioverstärker erforderte eine sorgfältige Abstimmung von serieller Kommunikation, Stromversorgung und GPIO-Belegung. 
+Fehler in der Verkabelung oder zeitliche Abweichungen in der seriellen Kommunikation mit den Arduinos führten wiederholt zu schwer reproduzierbaren Fehlersituationen. 
+Deren Behebung war nur durch systematisches Testen und eine schrittweise Integration der Einzelkomponenten möglich.
 
-Schließlich stellte die Balance zwischen technischer Funktionalität und einem angenehmen Nutzungserlebnis eine übergreifende Herausforderung dar.
-So war die reine Funktionsfähigkeit der Sprachpipeline zwar vergleichsweise früh erreicht, die wahrgenommene Qualität der Interaktion wurde jedoch maßgeblich durch Faktoren wie Antwortlatenz, Sprachausgabequalität und die Synchronisation zwischen visueller Darstellung und Audiowiedergabe beeinflusst.
-Die Optimierung dieser Aspekte erforderte iteratives Anpassen und Testen über mehrere Entwicklungszyklen hinweg.
+Darüber hinaus stellte die Abstimmung zwischen technischer Funktionalität und Nutzungserlebnis eine übergreifende Entwicklungsaufgabe dar. 
+Die grundlegende Funktionsfähigkeit der Sprachpipeline konnte bereits in einem frühen Entwicklungsstand erreicht werden. 
+Die wahrgenommene Qualität der Interaktion wurde jedoch wesentlich durch Antwortlatenz, Qualität der Sprachausgabe sowie die zeitliche Synchronisation zwischen visueller Darstellung und Audiowiedergabe bestimmt. 
+Die Verbesserung dieser Aspekte erforderte mehrere iterative Anpassungs- und Testzyklen.
