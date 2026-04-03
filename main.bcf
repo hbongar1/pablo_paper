@@ -2380,6 +2380,7 @@
     <bcf:citekey order="3" intorder="1">bentley2018understanding</bcf:citekey>
     <bcf:citekey order="4" intorder="1">li2015benefit</bcf:citekey>
     <bcf:citekey order="4" intorder="2">belpaeme2018social</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">vdi2221</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

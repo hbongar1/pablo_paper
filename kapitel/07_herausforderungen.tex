@@ -1,19 +1,9 @@
-
 \section{Praktische Herausforderungen}
 
 Im Verlauf der Entwicklung traten mehrere technische Herausforderungen auf, die die Komplexität eingebetteter Systeme mit heterogener Hard- und Software verdeutlichen.
 
-Ein wiederkehrendes Problem zeigte sich beim automatischen Systemstart nach dem Bootvorgang des Raspberry~Pi. 
-Da die grafische Benutzeroberfläche, Audiotreiber und der Pablo-Dienst parallel initialisiert werden, kam es zu zeitlichen Abhängigkeiten zwischen den einzelnen Komponenten. 
-Insbesondere die Audioeingabe über den ReSpeaker-HAT stand nach dem Hochfahren nicht in jedem Fall unmittelbar zuverlässig zur Verfügung, da der zugrunde liegende ALSA-Treiber erst nach einer systemabhängigen Verzögerung vollständig geladen war. 
-Zur Verbesserung der Startstabilität wurden deshalb eine gezielte Startverzögerung sowie eine Prüfschleife zur Verfügbarkeitskontrolle der Audioquelle umgesetzt.
+Ein wiederkehrendes Problem zeigte sich beim automatischen Systemstart nach dem Bootvorgang des Raspberry~Pi. Da grafische Benutzeroberfläche, Audiotreiber und Pablo-Dienst parallel initialisiert werden, entstanden zeitliche Abhängigkeiten zwischen den Komponenten. Insbesondere die Audioeingabe über den ReSpeaker-HAT stand nach dem Hochfahren nicht immer zuverlässig zur Verfügung, da der ALSA-Treiber erst verzögert vollständig geladen war. Zur Verbesserung der Startstabilität wurden daher eine gezielte Startverzögerung sowie eine Prüfschleife zur Verfügbarkeitskontrolle der Audioquelle umgesetzt.
 
-Eine weitere Herausforderung bestand in der Integration der verschiedenen Hard- und Softwarekomponenten auf der begrenzten Plattform. 
-Die Kombination aus Raspberry~Pi, Arduino-Mikrocontrollern, Mikrofon-HAT, Display und Audioverstärker erforderte eine sorgfältige Abstimmung von serieller Kommunikation, Stromversorgung und GPIO-Belegung. 
-Fehler in der Verkabelung oder zeitliche Abweichungen in der seriellen Kommunikation mit den Arduinos führten wiederholt zu schwer reproduzierbaren Fehlersituationen. 
-Deren Behebung war nur durch systematisches Testen und eine schrittweise Integration der Einzelkomponenten möglich.
+Eine weitere Herausforderung bestand in der Integration der verschiedenen Hard- und Softwarekomponenten auf der begrenzten Plattform. Die Kombination aus Raspberry~Pi, Arduino-Mikrocontrollern, Mikrofon-HAT, Display und Audioverstärker erforderte eine präzise Abstimmung von serieller Kommunikation, Stromversorgung und GPIO-Belegung. Fehler in der Verkabelung oder zeitliche Abweichungen in der seriellen Kommunikation führten wiederholt zu schwer reproduzierbaren Fehlersituationen, die nur durch systematisches Testen und schrittweise Integration behoben werden konnten.
 
-Darüber hinaus stellte die Abstimmung zwischen technischer Funktionalität und Nutzungserlebnis eine übergreifende Entwicklungsaufgabe dar. 
-Die grundlegende Funktionsfähigkeit der Sprachpipeline konnte bereits in einem frühen Entwicklungsstand erreicht werden. 
-Die wahrgenommene Qualität der Interaktion wurde jedoch wesentlich durch Antwortlatenz, Qualität der Sprachausgabe sowie die zeitliche Synchronisation zwischen visueller Darstellung und Audiowiedergabe bestimmt. 
-Die Verbesserung dieser Aspekte erforderte mehrere iterative Anpassungs- und Testzyklen.
+Darüber hinaus stellte die Abstimmung zwischen technischer Funktionalität und Nutzungserlebnis eine übergreifende Entwicklungsaufgabe dar. Zwar konnte die grundlegende Funktionsfähigkeit der Sprachpipeline früh erreicht werden, die wahrgenommene Interaktionsqualität wurde jedoch wesentlich durch Antwortlatenz, Sprachausgabequalität und die Synchronisation zwischen visueller Darstellung und Audiowiedergabe bestimmt. Die Verbesserung dieser Aspekte erforderte mehrere iterative Anpassungs- und Testzyklen.
