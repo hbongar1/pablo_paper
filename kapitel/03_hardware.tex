@@ -24,13 +24,29 @@ Durch diese Aufteilung der Steuerungsaufgaben auf mehrere Mikrocontroller konnte
 Das Gehäuse wurde als 3D-gedruckter Baumstamm gestaltet und nimmt sämtliche Hardwarekomponenten auf (vgl. Abbildung \ref{fig:hardware_explosion}).
 Diese Formgebung unterstreicht den Companion-Charakter von Pablo und schafft eine visuelle Abgrenzung gegenüber rein technischen Geräten.
 
+\begin{table}[htbp]
+\centering
+\caption{Übersicht der Hardwarekomponenten.}
+\label{tab:hardware}
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Funktion} & \textbf{Komponente} \\
+\midrule
+Recheneinheit & Raspberry Pi \\
+Audioerfassung & ReSpeaker 2-Mics Pi HAT \\
+Display & Waveshare 4'' IPS LCD \\
+Lautsprecher & 5\,W / 8\,$\Omega$ + Verstärker \\
+Energiesteuerung & Arduino Uno \\
+Servoansteuerung & Arduino Nano \\
+Mechanik & Servomotor \\
+Gehäuse & 3D-Druck (Baumstamm) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 
 \subsection{Einordnung}
-
-Eine erste zentrale Entscheidung betraf die Frage, ob Pablo als reine Softwarelösung oder als physisches Produkt umgesetzt werden soll.
-Softwarebasierte Assistenten lassen sich mit geringerem Aufwand entwickeln und auf bestehenden Endgeräten betreiben.
-Demgegenüber bietet ein physisches System eine deutlich höhere Präsenz im Alltag der Nutzenden.
-Die Entscheidung fiel daher bewusst zugunsten eines physischen Companion-Bots, um Pablo einen eigenständigen Produktcharakter zu verleihen und eine persönliche Bindung zu ermöglichen, die über die reine Funktionalität hinausgeht.
 
 Für die zentrale Recheneinheit wurden verschiedene Plattformen in Betracht gezogen, darunter leistungsfähigere Einplatinencomputer sowie Cloud-basierte Ansätze, bei denen die gesamte Verarbeitung auf einem externen Server erfolgt.
 Die Entscheidung fiel auf einen Raspberry Pi, da dieser eine gute Verfügbarkeit, eine breite Community-Unterstützung und eine ausreichende Schnittstellenvielfalt für die Anbindung von Mikrofon, Display, Lautsprecher und Mikrocontrollern bietet.
