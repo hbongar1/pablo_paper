@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  3 APR 2026 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -674,7 +674,33 @@ Overfull \hbox (2.31581pt too wide) in paragraph at lines 17--20
 []\T1/cmr/m/n/10.95 Die In-te-gra-ti-on neu-er Plug-ins er-folgt nach dem-sel-ben Mus-ter. Hier-für wird im Ver-zeich-nis \T1/cmtt/m/n/10.95 plugins
  []
 
-) (./kapitel/06_benutzererlebnis.tex [4]) (./kapitel/07_herausforderungen.tex [5]) (./kapitel/08_fazit_ausblick.tex [6]) [7] (./helena.aux)
+) (./kapitel/06_benutzererlebnis.tex [4]
+<grafiken/IMG_1502.png, id=91, 4300.065pt x 5733.42pt>
+File: grafiken/IMG_1502.png Graphic file (type png)
+<use grafiken/IMG_1502.png>
+Package pdftex.def Info: grafiken/IMG_1502.png  used on input line 19.
+(pdftex.def)             Requested size: 218.49336pt x 168.91895pt.
+<grafiken/idle_1.jpeg, id=94, 1027.84pt x 1027.84pt>
+File: grafiken/idle_1.jpeg Graphic file (type jpg)
+<use grafiken/idle_1.jpeg>
+Package pdftex.def Info: grafiken/idle_1.jpeg  used on input line 26.
+(pdftex.def)             Requested size: 74.293pt x 74.293pt.
+<grafiken/thinking.jpeg, id=95, 1027.84pt x 1027.84pt>
+File: grafiken/thinking.jpeg Graphic file (type jpg)
+<use grafiken/thinking.jpeg>
+Package pdftex.def Info: grafiken/thinking.jpeg  used on input line 28.
+(pdftex.def)             Requested size: 74.293pt x 74.293pt.
+<grafiken/speaking_2.jpeg, id=96, 1027.84pt x 1027.84pt>
+File: grafiken/speaking_2.jpeg Graphic file (type jpg)
+<use grafiken/speaking_2.jpeg>
+Package pdftex.def Info: grafiken/speaking_2.jpeg  used on input line 32.
+(pdftex.def)             Requested size: 74.293pt x 74.293pt.
+<grafiken/blinking.jpeg, id=97, 1027.84pt x 1027.84pt>
+File: grafiken/blinking.jpeg Graphic file (type jpg)
+<use grafiken/blinking.jpeg>
+Package pdftex.def Info: grafiken/blinking.jpeg  used on input line 34.
+(pdftex.def)             Requested size: 74.293pt x 74.293pt.
+) (./kapitel/07_herausforderungen.tex [5 <./grafiken/idle_1.jpeg> <./grafiken/thinking.jpeg> <./grafiken/speaking_2.jpeg> <./grafiken/blinking.jpeg> <./grafiken/IMG_1502.png>]) (./kapitel/08_fazit_ausblick.tex [6] [7]) [8] (./helena.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -686,18 +712,18 @@ Package logreq Info: Writing requests to 'helena.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19537 strings out of 467525
- 337519 string characters out of 5418982
- 1215260 words of memory out of 5000000
- 48182 multiletter control sequences out of 15000+600000
- 639631 words of font info for 72 fonts, out of 8000000 for 9000
+ 19582 strings out of 467525
+ 338705 string characters out of 5418982
+ 1215355 words of memory out of 5000000
+ 48224 multiletter control sequences out of 15000+600000
+ 640394 words of font info for 73 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,6n,79p,755b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on helena.pdf (7 pages, 166335 bytes).
+ 69i,9n,79p,755b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on helena.pdf (8 pages, 14159688 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

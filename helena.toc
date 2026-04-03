@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {3}Benutzererlebnis}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Ergebnis}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Einordnung}{5}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Praktische Herausforderungen}{5}{section.4}%
+\contentsline {section}{\numberline {4}Praktische Herausforderungen}{6}{section.4}%
 \contentsline {section}{\numberline {5}Fazit}{6}{section.5}%
 \contentsline {section}{\numberline {6}Ausblick}{7}{section.6}%
