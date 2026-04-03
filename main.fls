@@ -1,8 +1,8 @@
-PWD /Users/Elias/Documents/GitHub/pablo_paper
+PWD /Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/Elias/Documents/GitHub/pablo_paper/main.tex
+INPUT /Users/helenabongartz/Documents/GitHub/pabloBot/pablo_paper/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
